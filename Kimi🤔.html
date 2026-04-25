@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F9F7F2" />
+  <title>Dr Abdurrahman M. Hafez | Medical & Editorial Designer</title>
+  <meta name="description" content="Dr Abdurrahman M. Hafez — medical content designer, book layout specialist, and educational content architect. Expert in medical PDFs, question banks, summaries, and academic publishing." />
+  <meta property="og:title" content="Dr Abdurrahman M. Hafez | Medical & Editorial Designer" />
+  <meta property="og:description" content="Medical content designer, book layout specialist, and educational content architect." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr Abdurrahman M. Hafez | Medical & Editorial Designer" />
+  <meta name="twitter:description" content="Medical content designer, book layout specialist, and educational content architect." />
+  <meta name="twitter:image" content="logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F5F0E8',
+            ink: '#1C1C1A',
+            forest: '#2A5840',
+            gold: '#B8935A',
+            mist: '#8A8A84',
+            medical: '#1A6B8A',
+            darkbg: '#0E0E0C',
+            darkcard: '#161614',
+            darktext: '#E8E4DC',
+            darkmuted: '#A0A098',
+            darkgold: '#C9A46A',
+            darkforest: '#4D9E72',
+            darkmedi: '#3A9DC0',
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+            arabic: ['"Tajawal"', 'sans-serif'],
+          },
+          boxShadow: {
+            page: '0 8px 40px rgba(28,28,26,0.08)',
+            lift: '0 24px 80px rgba(28,28,26,0.14)',
+            gold: '0 0 0 1px rgba(184,147,90,0.25)',
+          },
+          aspectRatio: {
+            'a4': '210 / 297',
+          },
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ===================== DESIGN SYSTEM ===================== */
+    :root {
+      --c-cream: #F5F0E8;
+      --c-ink: #1C1C1A;
+      --c-forest: #2A5840;
+      --c-gold: #B8935A;
+      --c-mist: #8A8A84;
+      --c-medical: #1A6B8A;
+      --c-wa: #25D366;
+      --c-darkbg: #0E0E0C;
+      --c-darkcard: #161614;
+      --c-darktext: #E8E4DC;
+      --c-darkmuted: #A0A098;
+      --c-darkgold: #C9A46A;
+      --c-darkforest: #4D9E72;
+      --c-darkmedi: #3A9DC0;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-arabic: 'IBM Plex Sans Arabic', 'Tajawal', 'Segoe UI', sans-serif;
+      --lh-tight: 1.05;
+      --lh-snug: 1.25;
+      --lh-normal: 1.5;
+      --lh-relaxed: 1.72;
+      --lh-arabic: 1.9;
+      --shadow-card: 0 1px 2px rgba(28,28,26,0.03), 0 4px 12px rgba(28,28,26,0.055), 0 16px 36px rgba(28,28,26,0.065);
+      --shadow-card-hover: 0 2px 4px rgba(28,28,26,0.04), 0 8px 24px rgba(28,28,26,0.09), 0 24px 52px rgba(28,28,26,0.10);
+      --shadow-lift: 0 2px 8px rgba(28,28,26,0.06), 0 12px 40px rgba(28,28,26,0.11);
+      --shadow-btn: 0 4px 16px rgba(42,88,64,0.26);
+      --shadow-btn-hover: 0 8px 28px rgba(42,88,64,0.38);
+      --border-s: 1px solid rgba(28,28,26,0.07);
+      --border-m: 1px solid rgba(28,28,26,0.12);
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --t-fast: 0.18s;
+      --t-mid: 0.28s;
+      --t-slow: 0.55s;
+      --t-reveal: 0.9s;
+      --r-sm: 0.875rem;
+      --r-md: 1.25rem;
+      --r-lg: 1.75rem;
+      --r-xl: 2rem;
+    }
+    .dark {
+      --border-s: 1px solid rgba(255,255,255,0.055);
+      --border-m: 1px solid rgba(255,255,255,0.10);
+      --shadow-card: 0 1px 2px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.18), 0 18px 40px rgba(0,0,0,0.20);
+      --shadow-card-hover: 0 2px 6px rgba(0,0,0,0.18), 0 10px 28px rgba(0,0,0,0.24), 0 28px 60px rgba(0,0,0,0.26);
+    }
+
+    body.lang-ar {
+      font-family: var(--font-arabic);
+    }
+    body.lang-ar .font-display {
+      font-family: var(--font-arabic);
+      font-style: normal;
+      letter-spacing: 0;
+    }
+    body.lang-ar .hero-title,
+    body.lang-ar .section-title {
+      line-height: 1.18;
+    }
+    body.lang-ar main,
+    body.lang-ar footer {
+      direction: rtl;
+    }
+    body.lang-ar .comparison-meta,
+    body.lang-ar #pdf-modal-header,
+    body.lang-ar .project-overlay,
+    body.lang-ar .feedback-toolbar {
+      direction: rtl;
+    }
+    body.lang-ar .comparison-badge.before {
+      left: auto;
+      right: 0.85rem;
+    }
+    body.lang-ar .comparison-badge.after {
+      right: auto;
+      left: 0.85rem;
+    }
+    body.lang-ar .tl-wrap {
+      padding-left: 0;
+      padding-right: 2.25rem;
+    }
+    body.lang-ar .tl-wrap::before {
+      left: auto;
+      right: 0.5rem;
+    }
+    body.lang-ar .tl-dot {
+      left: auto;
+      right: -2.125rem;
+    }
+    body.lang-ar .lang-ltr {
+      direction: ltr;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+    section, footer { scroll-margin-top: 72px; }
+
+    /* Cursor glow - hidden on touch devices */
+    @media (hover: none) {
+      #cursor-glow { display: none !important; }
+    }
+    #cursor-glow {
+      pointer-events: none; position: fixed; top: 0; left: 0;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(42,88,64,0.15) 0%, transparent 70%);
+      z-index: 9999; will-change: transform; transform: translate(-50%, -50%);
+      transition: transform 0.1s ease-out;
+    }
+    .dark #cursor-glow { background: radial-gradient(circle, rgba(77,158,114,0.16) 0%, rgba(77,158,114,0.06) 45%, transparent 70%); }
+
+    .reveal        { opacity: 0; transform: translateY(26px); transition: opacity var(--t-reveal) var(--ease-out), transform var(--t-reveal) var(--ease-out); will-change: transform, opacity; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.18s; }
+    .reveal-delay-3 { transition-delay: 0.28s; }
+    .reveal-delay-4 { transition-delay: 0.38s; }
+
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: ""; position: absolute; left: 0; bottom: -4px;
+      width: 100%; height: 1px; background: currentColor;
+      transform: scaleX(0); transform-origin: right;
+      transition: transform var(--t-mid) var(--ease-out);
+    }
+    .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-track { display: flex; width: max-content; animation: marquee 38s linear infinite; will-change: transform; }
+    .marquee-track:hover, .marquee-track:focus-within { animation-play-state: paused; }
+
+    .typed-cursor::after { content: "|"; animation: blink 0.9s step-end infinite; opacity: 0.65; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .btn-shimmer {
+      background: linear-gradient(108deg, #2A5840 38%, #4D9E72 50%, #2A5840 62%);
+      background-size: 220% auto;
+      transition: background-position var(--t-slow) var(--ease-out), box-shadow var(--t-mid) ease, transform var(--t-fast) ease;
+      will-change: transform;
+    }
+    .btn-shimmer:hover { background-position: right center; box-shadow: var(--shadow-btn-hover); transform: translateY(-1.5px); }
+    .btn-shimmer:active { transform: translateY(0.5px); }
+
+    .btn-medical {
+      background: linear-gradient(108deg, #1A6B8A 38%, #3A9DC0 50%, #1A6B8A 62%);
+      background-size: 220% auto;
+      transition: background-position var(--t-slow) var(--ease-out), box-shadow var(--t-mid) ease, transform var(--t-fast) ease;
+    }
+    .btn-medical:hover { background-position: right center; box-shadow: 0 8px 30px rgba(26,107,138,0.4); transform: translateY(-1.5px); }
+
+    .btn-outline {
+      border: 1.5px solid rgba(28,28,26,0.12);
+      transition: border-color var(--t-mid) ease, color var(--t-mid) ease, background-color var(--t-mid) ease, transform var(--t-fast) ease, box-shadow var(--t-mid) ease;
+    }
+    .btn-outline:hover { border-color: var(--c-forest); color: var(--c-forest); background: rgba(42,88,64,0.05); transform: translateY(-1.5px); box-shadow: 0 5px 18px rgba(42,88,64,0.10); }
+    .dark .btn-outline { border-color: rgba(255,255,255,0.11); }
+    .dark .btn-outline:hover { border-color: var(--c-darkforest); color: var(--c-darkforest); background: rgba(77,158,114,0.08); }
+
+    /* Project card - tamed hover (Phase 2 #7) */
+    .project-card {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      transition: transform var(--t-mid) var(--ease-out), box-shadow var(--t-mid) ease;
+      will-change: transform;
+    }
+    .project-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: var(--shadow-card-hover);
+    }
+    .project-card:hover .project-visual img {
+      transform: scale(1.03);
+    }
+    .project-visual::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(14,14,12,0.4) 0%, transparent 50%);
+      pointer-events: none; opacity: 1; border-radius: inherit;
+      transition: opacity var(--t-mid) ease;
+    }
+    .project-card:hover .project-visual::after { opacity: 1; }
+
+    .project-overlay {
+      position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+      padding: 0.85rem 0.95rem;
+      border-radius: var(--r-md);
+      color: #fff;
+      background: rgba(255,255,255,0.11);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(16px) saturate(1.3);
+      -webkit-backdrop-filter: blur(16px) saturate(1.3);
+      box-shadow: 0 8px 22px rgba(10,10,10,0.16), inset 0 1px 0 rgba(255,255,255,0.12);
+      z-index: 20;
+    }
+    .project-overlay small { display: block; font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 0.2rem; }
+    .project-overlay strong { display: block; font-size: 0.9rem; font-weight: 600; line-height: 1.2; }
+
+    /* Project PDF button - refined gold gradient (Phase 2 #8) */
+    .project-pdf-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+      min-width: 7.8rem; padding: 0.78rem 1.05rem;
+      border-radius: 999px; color: #fff;
+      background: linear-gradient(135deg, var(--c-gold), var(--c-darkgold));
+      box-shadow: 0 6px 16px rgba(184,147,90,0.24), inset 0 1px 0 rgba(255,255,255,0.18);
+      transition: transform var(--t-fast) ease, box-shadow var(--t-mid) ease, filter var(--t-mid) ease;
+      font-size: 0.82rem; font-weight: 600;
+      position: relative; z-index: 30;
+      border: none; cursor: pointer;
+    }
+    .project-pdf-btn:hover { transform: translateY(-1.5px); box-shadow: 0 10px 22px rgba(184,147,90,0.34); filter: brightness(1.06); }
+    .project-pdf-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(184,147,90,0.35), 0 10px 22px rgba(184,147,90,0.34); }
+    .project-pdf-btn svg { flex-shrink: 0; }
+
+    .filter-tab { cursor: pointer; transition: all var(--t-mid) var(--ease-out); }
+    .filter-tab.active { background: var(--c-forest); color: var(--c-cream); border-color: var(--c-forest); box-shadow: 0 4px 14px rgba(42,88,64,0.24); }
+    .dark .filter-tab.active { background: var(--c-darkforest); color: var(--c-darkbg); border-color: var(--c-darkforest); }
+    /* Project filter fix: use opacity/pointer-events to keep grid cells occupied (Phase 1 #3) */
+    .project-item { transition: opacity var(--t-mid) ease, transform var(--t-mid) ease, visibility var(--t-mid) ease; }
+    .project-item.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: scale(0.97);
+    }
+
+    .skill-bar-fill { width: 0; transition: width 1.4s var(--ease-out); }
+
+    #toast { transition: transform 0.5s var(--ease-out), opacity 0.5s ease; transform: translateY(18px); opacity: 0; }
+    #toast.show { transform: translateY(0); opacity: 1; }
+
+    @keyframes ping-slow { 75%, 100% { transform: scale(1.8); opacity: 0; } }
+    .ping-slow { animation: ping-slow 2.4s cubic-bezier(0,0,0.2,1) infinite; }
+
+    .stat-number { font-variant-numeric: tabular-nums; }
+
+    #wa-float { transition: transform var(--t-mid) var(--ease-spring), box-shadow var(--t-mid) ease; animation: wa-pulse 3s ease-out infinite; }
+    #wa-float:hover { animation: none; transform: scale(1.1) translateY(-2px); box-shadow: 0 14px 38px rgba(37,211,102,0.45); }
+
+    .medical-badge { background: linear-gradient(135deg, rgba(26,107,138,0.10), rgba(26,107,138,0.04)); border: 1px solid rgba(26,107,138,0.22); }
+    .dark .medical-badge { background: linear-gradient(135deg, rgba(58,157,192,0.13), rgba(58,157,192,0.04)); border-color: rgba(58,157,192,0.28); }
+
+    [lang="ar"], .font-arabic {
+      font-family: var(--font-arabic);
+      font-weight: 500;
+      letter-spacing: 0;
+      direction: rtl;
+      unicode-bidi: isolate;
+      text-rendering: optimizeLegibility;
+      line-height: var(--lh-arabic);
+    }
+    .cta-bilingual { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; flex-wrap: wrap; line-height: 1; }
+    .cta-en { letter-spacing: 0.2em; text-transform: uppercase; }
+    .cta-divider { opacity: 0.38; font-weight: 300; }
+    .cta-ar { font-family: var(--font-arabic); font-size: 1rem; font-weight: 600; letter-spacing: 0; direction: rtl; unicode-bidi: isolate; }
+
+    .theme-switch {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.36rem 0.42rem 0.36rem 0.78rem;
+      border-radius: 999px;
+      border: 1px solid rgba(28,28,26,0.07);
+      background: rgba(255,255,255,0.55);
+      box-shadow: 0 2px 8px rgba(28,28,26,0.04), 0 8px 22px rgba(28,28,26,0.055);
+      transition: border-color var(--t-mid) ease, background var(--t-mid) ease, transform var(--t-fast) ease;
+      cursor: pointer;
+    }
+    .theme-switch:hover { transform: translateY(-1px); border-color: rgba(42,88,64,0.2); }
+    .dark .theme-switch { border-color: rgba(255,255,255,0.07); background: rgba(255,255,255,0.04); box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 10px 26px rgba(0,0,0,0.22); }
+    .theme-switch-label { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--c-mist); }
+    .dark .theme-switch-label { color: var(--c-darkmuted); }
+    .theme-switch-track { position: relative; width: 3.2rem; height: 1.75rem; border-radius: 999px; background: linear-gradient(135deg, rgba(184,147,90,0.18), rgba(42,88,64,0.28)); transition: background var(--t-mid) ease; }
+    .dark .theme-switch-track { background: linear-gradient(135deg, rgba(58,157,192,0.4), rgba(77,158,114,0.44)); }
+    .theme-switch-thumb {
+      position: absolute; top: 0.17rem; left: 0.17rem;
+      width: 1.42rem; height: 1.42rem; border-radius: 50%;
+      background: #fff; display: inline-flex; align-items: center; justify-content: center;
+      color: var(--c-ink);
+      box-shadow: 0 2px 6px rgba(28,28,26,0.14), 0 5px 14px rgba(28,28,26,0.09);
+      transition: transform var(--t-mid) cubic-bezier(0.34,1.56,0.64,1), background var(--t-mid) ease, color var(--t-mid) ease;
+    }
+    .dark .theme-switch-thumb { transform: translateX(1.42rem); background: var(--c-darkbg); color: var(--c-darktext); }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 3.25rem;
+      height: 2.4rem;
+      padding: 0 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(28,28,26,0.09);
+      background: rgba(28,28,26,0.04);
+      color: var(--c-ink);
+      box-shadow: 0 2px 8px rgba(28,28,26,0.06), 0 10px 24px rgba(28,28,26,0.08);
+      transition: transform var(--t-fast) ease, border-color var(--t-mid) ease, background-color var(--t-mid) ease, box-shadow var(--t-mid) ease;
+    }
+    .lang-switch:hover {
+      transform: translateY(-1px);
+      border-color: rgba(42,88,64,0.24);
+      background: rgba(42,88,64,0.06);
+      box-shadow: 0 8px 24px rgba(28,28,26,0.12);
+    }
+    .lang-switch-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+    .dark .lang-switch {
+      border-color: rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.05);
+      color: var(--c-darktext);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 10px 26px rgba(0,0,0,0.22);
+    }
+    .dark .lang-switch:hover {
+      border-color: rgba(77,158,114,0.35);
+      background: rgba(77,158,114,0.11);
+    }
+
+    .testimonial-card {
+      position: relative;
+      padding: 1.5rem; border-radius: var(--r-lg);
+      border: var(--border-s);
+      background: rgba(255,255,255,0.76);
+      box-shadow: var(--shadow-card);
+      transition: box-shadow var(--t-mid) ease, transform var(--t-mid) ease;
+      overflow: hidden;
+    }
+    .testimonial-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-3px); }
+    .dark .testimonial-card { border: var(--border-s); background: rgba(255,255,255,0.025); box-shadow: var(--shadow-card); }
+    .testimonial-card::before {
+      content: "\201C";
+      position: absolute; top: 0.6rem; right: 0.9rem;
+      font-family: var(--font-display); font-size: 3.8rem; line-height: 1;
+      color: rgba(184,147,90,0.16); pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+
+    .feedback-carousel {
+      position: relative; overflow: hidden;
+      border-radius: 1.25rem; border: var(--border-s);
+      background: linear-gradient(180deg, rgba(255,255,255,0.84), rgba(245,240,232,0.88));
+      box-shadow: var(--shadow-card);
+      min-height: 13rem;
+    }
+    .dark .feedback-carousel { border: var(--border-s); background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); box-shadow: var(--shadow-card); }
+    .feedback-track { display: flex; will-change: transform; transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1); }
+    .feedback-shot { min-width: 100%; padding: 0.85rem; }
+    .feedback-frame { border-radius: 1.1rem; overflow: hidden; border: var(--border-s); background: #fff; }
+    .dark .feedback-frame { border: var(--border-s); background: #111110; }
+    .feedback-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.62rem 0.82rem; border-bottom: var(--border-s); background: rgba(245,240,232,0.9); }
+    .dark .feedback-toolbar { border-bottom: var(--border-s); background: rgba(255,255,255,0.025); }
+    .feedback-bubbles { display: grid; gap: 0.58rem; padding: 0.88rem; min-height: 10rem; align-content: start; }
+    .feedback-bubble { max-width: 87%; padding: 0.65rem 0.8rem; border-radius: var(--r-sm); font-size: 0.83rem; line-height: 1.58; box-shadow: 0 2px 8px rgba(28,28,26,0.04); }
+    .feedback-bubble.incoming { justify-self: start; background: rgba(28,28,26,0.04); color: var(--c-ink); }
+    .feedback-bubble.outgoing { justify-self: end; background: rgba(42,88,64,0.12); color: var(--c-ink); }
+    .dark .feedback-bubble.incoming { background: rgba(255,255,255,0.07); color: var(--c-darktext); }
+    .dark .feedback-bubble.outgoing { background: rgba(77,158,114,0.16); color: var(--c-darktext); }
+    .feedback-dot {
+      width: 8px; height: 8px; border-radius: 999px;
+      border: none; padding: 0; appearance: none;
+      background: currentColor; opacity: 0.22;
+      cursor: pointer;
+      transition: transform var(--t-mid) cubic-bezier(0.34,1.56,0.64,1), opacity var(--t-mid) ease, width var(--t-mid) ease;
+    }
+    .feedback-dot.active { opacity: 1; transform: scale(1.4); width: 20px; }
+
+    .comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+    .comparison-card {
+      padding: 0.85rem; border-radius: var(--r-xl);
+      border: var(--border-s);
+      background: rgba(255,255,255,0.74);
+      box-shadow: var(--shadow-card);
+      transition: box-shadow var(--t-mid) ease, transform var(--t-mid) ease;
+    }
+    .comparison-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-3px); }
+    .dark .comparison-card { border: var(--border-s); background: rgba(255,255,255,0.025); box-shadow: var(--shadow-card); }
+    .comparison-frame {
+      position: relative; aspect-ratio: 3 / 4; overflow: hidden;
+      border-radius: var(--r-md);
+      background: linear-gradient(180deg, rgba(245,240,232,0.96), rgba(232,228,220,0.96));
+      max-width: 400px; margin: 0 auto;
+    }
+    .dark .comparison-frame { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); }
+    .compare-layer {
+      position: absolute;
+      inset: 0;
+    }
+    .compare-layer img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      image-rendering: auto;
+    }
+    .comparison-after {
+      position: absolute;
+      top: 0; left: 0;
+      width: 52%;
+      height: 100%;
+      overflow: hidden;
+      box-shadow: 6px 0 16px rgba(28,28,26,0.12);
+    }
+    .comparison-divider {
+      position: absolute; top: 0; bottom: 0; left: 52%; width: 2px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.98) 20%, rgba(255,255,255,0.98) 80%, rgba(255,255,255,0.15) 100%);
+      box-shadow: 0 0 6px rgba(255,255,255,0.45), 0 0 1px rgba(28,28,26,0.10);
+      pointer-events: none;
+    }
+    .comparison-handle {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 2.8rem; height: 2.8rem; border-radius: 999px;
+      background: rgba(255,255,255,0.97);
+      color: var(--c-ink);
+      display: inline-flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 6px rgba(28,28,26,0.10), 0 8px 22px rgba(28,28,26,0.17), inset 0 1px 0 rgba(255,255,255,0.9);
+      border: 1.5px solid rgba(255,255,255,0.65);
+      transition: transform var(--t-fast) cubic-bezier(0.34,1.56,0.64,1), box-shadow var(--t-fast) ease;
+      z-index: 5;
+    }
+    .comparison-card:hover .comparison-handle {
+      transform: translate(-50%,-50%) scale(1.09);
+      box-shadow: 0 4px 12px rgba(28,28,26,0.16), 0 12px 30px rgba(28,28,26,0.2), inset 0 1px 0 rgba(255,255,255,0.9);
+    }
+    .comparison-badge {
+      position: absolute; top: 0.85rem;
+      padding: 0.32rem 0.76rem; border-radius: 999px;
+      font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.22em; font-weight: 700;
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); z-index: 2;
+    }
+    .comparison-badge.before { left: 0.85rem; color: #fff; background: rgba(28,28,26,0.68); box-shadow: 0 2px 8px rgba(0,0,0,0.16); }
+    .comparison-badge.after  { right: 0.85rem; color: #fff; background: rgba(42,88,64,0.75); box-shadow: 0 2px 8px rgba(42,88,64,0.22); }
+    .comparison-range { position: absolute; inset: 0; width: 100%; height: 100%; appearance: none; background: transparent; opacity: 0; cursor: ew-resize; z-index: 3; touch-action: pan-y; }
+    .comparison-range::-webkit-slider-thumb { width: 44px; height: 44px; appearance: none; }
+    .comparison-range::-moz-range-thumb { width: 44px; height: 44px; border: none; background: transparent; }
+    .comparison-empty { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; text-align: center; padding: 1rem; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+    .compare-layer.is-empty .comparison-empty { opacity: 1; }
+    .compare-layer.is-empty img { display: none; }
+    .comparison-empty svg { width: 2.2rem; height: 2.2rem; opacity: 0.38; }
+    .comparison-meta { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+
+    .visitor-counter { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(28,28,26,0.10); text-align: center; }
+    .dark .visitor-counter { border-top-color: rgba(255,255,255,0.07); }
+    #visitor-count { font-variant-numeric: tabular-nums; letter-spacing: 0.2em; }
+
+    .ba-scroll-outer { overflow: hidden; }
+    .ba-track { display: flex; gap: 1.25rem; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; touch-action: pan-x; scrollbar-width: none; }
+    .ba-track::-webkit-scrollbar { display: none; }
+    .ba-pair { scroll-snap-align: start; flex-shrink: 0; display: grid; gap: 0.75rem; }
+    @media (max-width: 767px) { .ba-pair { width: calc(100vw - 2.5rem); grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 768px) { .ba-track { overflow-x: visible; flex-wrap: wrap; } .ba-pair { width: calc(50% - 0.625rem); grid-template-columns: 1fr 1fr; } }
+    .ba-img-wrap {
+      position: relative; aspect-ratio: 210 / 297; overflow: hidden;
+      border-radius: var(--r-sm); background: #e8e4dc;
+      box-shadow: var(--shadow-card);
+      transition: box-shadow var(--t-mid) ease, transform var(--t-mid) ease;
+    }
+    .ba-img-wrap:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-2px); }
+    .dark .ba-img-wrap { background: #1a1a18; }
+    .ba-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ba-label { position: absolute; top: 0.7rem; left: 0.7rem; font-family: var(--font-body); font-size: 0.58rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.24em; padding: 0.22rem 0.6rem; border-radius: 99px; backdrop-filter: blur(8px); pointer-events: none; }
+    .ba-label-before { background: rgba(28,28,26,0.7); color: #fff; }
+    .ba-label-after  { background: rgba(42,88,64,0.82); color: #fff; }
+    .ba-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; opacity: 0.25; transition: opacity var(--t-mid) ease, transform var(--t-mid) ease; }
+    .ba-dot.active { opacity: 1; transform: scale(1.45); }
+
+    .tl-wrap { position: relative; padding-left: 2.25rem; }
+    .tl-wrap::before {
+      content: ""; position: absolute; left: 0.5rem; top: 0.4rem; bottom: 0.4rem; width: 1px;
+      background: linear-gradient(to bottom, var(--c-forest) 0%, rgba(42,88,64,0.10) 100%);
+    }
+    .dark .tl-wrap::before { background: linear-gradient(to bottom, var(--c-darkforest) 0%, rgba(77,158,114,0.08) 100%); }
+    .tl-dot {
+      position: absolute; left: -2.125rem; top: 0.55rem;
+      width: 0.75rem; height: 0.75rem; border-radius: 50%;
+      border: 2px solid var(--c-forest); background: var(--c-cream);
+      transition: background var(--t-mid) ease, transform var(--t-mid) cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .dark .tl-dot { border-color: var(--c-darkforest); background: var(--c-darkbg); }
+    .tl-dot.active-dot { background: var(--c-forest); box-shadow: 0 0 0 3px rgba(42,88,64,0.14); }
+    .dark .tl-dot.active-dot { background: var(--c-darkforest); box-shadow: 0 0 0 3px rgba(77,158,114,0.14); }
+
+    input, select, textarea { transition: border-color var(--t-mid) ease, box-shadow var(--t-mid) ease; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--c-forest) !important; box-shadow: 0 0 0 3px rgba(42,88,64,0.10); }
+    .dark input:focus, .dark select:focus, .dark textarea:focus { border-color: var(--c-darkforest) !important; box-shadow: 0 0 0 3px rgba(77,158,114,0.12); }
+
+    /* Mobile menu improvements: safe area, overscroll, backdrop blur (Phase 4 #14) */
+    #mobile-menu {
+      overscroll-behavior: contain;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    #mobile-menu > nav {
+      height: calc(100dvh - 73px);
+    }
+
+    @media (max-width: 1023px) { .comparison-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 767px) {
+      .cta-bilingual { gap: 0.4rem; }
+      .cta-en        { letter-spacing: 0.14em; }
+      .cta-ar        { font-size: 0.92rem; }
+      .theme-switch-label { display: none; }
+      .feedback-bubbles { min-height: 9rem; }
+      .comparison-handle { width: 3rem; height: 3rem; }
+      .feedback-dot { width: 10px; height: 10px; }
+      .feedback-dot.active { width: 24px; }
+    }
+    @media (max-width: 480px) {
+      .project-overlay { left: 0.75rem; right: 0.75rem; bottom: 0.75rem; }
+      .project-pdf-btn { min-width: 6.2rem; padding: 0.7rem 0.9rem; font-size: 0.78rem; }
+    }
+
+    /* prefers-contrast for accessibility (Phase 5 #19) */
+    @media (prefers-contrast: more) {
+      .project-card, .testimonial-card, .comparison-card, .service-card, .stat-card {
+        border-width: 2px;
+      }
+      .comparison-badge.before, .comparison-badge.after {
+        border: 1px solid rgba(255,255,255,0.8);
+      }
+      .feedback-bubble.incoming { border: 1px solid rgba(28,28,26,0.3); }
+      .feedback-bubble.outgoing { border: 1px solid rgba(42,88,64,0.3); }
+      .dark .feedback-bubble.incoming { border: 1px solid rgba(255,255,255,0.3); }
+      .dark .feedback-bubble.outgoing { border: 1px solid rgba(77,158,114,0.3); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .reveal-delay-1, .reveal-delay-2, .reveal-delay-3, .reveal-delay-4 { opacity: 1; transform: none; transition: none; }
+      .marquee-track { animation: none; }
+      .typed-cursor::after { animation: none; }
+      .ping-slow { animation: none; }
+      #cursor-glow { display: none; }
+      .feedback-track { transition: none; }
+      .skill-bar-fill { transition: none; }
+    }
+
+    @keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+
+    header { transition: box-shadow 0.3s ease; }
+    header.scrolled { box-shadow: 0 1px 0 rgba(28,28,26,0.06), 0 4px 24px rgba(28,28,26,0.07); }
+    .dark header.scrolled { box-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 4px 24px rgba(0,0,0,0.28); }
+
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.40), 0 8px 24px rgba(37,211,102,0.28); }
+      60%       { box-shadow: 0 0 0 12px rgba(37,211,102,0), 0 8px 24px rgba(37,211,102,0.28); }
+    }
+
+    .eyebrow { font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.36em; font-weight: 500; }
+    .hero-title { font-size: clamp(2.8rem, 9vw, 6.5rem); line-height: 0.92; letter-spacing: -0.01em; }
+    .section-title { font-size: clamp(2rem, 4.5vw, 3.25rem); line-height: 1.05; }
+
+    .tl-item { padding: 0.5rem 0.5rem 0.5rem 0; border-radius: 0.75rem; transition: background var(--t-mid) ease; }
+    .tl-item:hover { background: rgba(42,88,64,0.04); }
+    .dark .tl-item:hover { background: rgba(77,158,114,0.06); }
+
+    .project-text-link { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .project-text-link::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 100%; height: 1px; background: currentColor; opacity: 0; transform: scaleX(0); transform-origin: left; transition: opacity var(--t-mid) ease, transform var(--t-mid) var(--ease-out); }
+    .project-text-link:hover::after { opacity: 0.45; transform: scaleX(1); }
+
+    .service-card { transition: border-color var(--t-mid) ease, background-color var(--t-mid) ease, box-shadow var(--t-mid) ease, transform var(--t-mid) var(--ease-out); }
+    .service-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-4px); }
+
+    .stat-card { transition: box-shadow var(--t-mid) ease, transform var(--t-mid) var(--ease-out); cursor: default; }
+    .stat-card:hover { box-shadow: var(--shadow-card); transform: translateY(-2px); }
+
+    .project-visual { position: relative; overflow: hidden; }
+    .project-visual::after { border-radius: inherit; }
+    .project-visual img { transition: transform 0.8s var(--ease-out); will-change: transform; }
+
+    .logo-name { white-space: nowrap; overflow: visible; }
+
+    img { background: rgba(200,195,185,0.2); }
+    .dark img { background: rgba(40,40,36,0.3); }
+
+    /* PDF Modal improvements (Phase 7 #30-32) */
+    #pdf-modal {
+      position: fixed; inset: 0; z-index: 9000;
+      display: flex; align-items: center; justify-content: center;
+      padding: 1rem;
+      background: rgba(14,14,12,0);
+      backdrop-filter: blur(0px);
+      pointer-events: none;
+      transition: background-color 0.35s var(--ease-out), backdrop-filter 0.35s var(--ease-out);
+    }
+    #pdf-modal.is-open {
+      background: rgba(14,14,12,0.82);
+      backdrop-filter: blur(12px);
+      pointer-events: all;
+    }
+    #pdf-modal-inner {
+      position: relative;
+      display: flex; flex-direction: column;
+      width: 100%; max-width: 48rem;
+      height: 78vh; max-height: 700px;
+      background: var(--c-cream);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06);
+      opacity: 0;
+      transform: translateY(28px) scale(0.98);
+      transition: opacity 0.38s var(--ease-out), transform 0.38s var(--ease-out);
+    }
+    .dark #pdf-modal-inner { background: var(--c-darkcard); }
+    #pdf-modal.is-open #pdf-modal-inner {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    #pdf-modal-header {
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.85rem 1.1rem 0.85rem 1.4rem;
+      border-bottom: var(--border-s);
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(8px);
+    }
+    .dark #pdf-modal-header {
+      background: rgba(22,22,20,0.8);
+    }
+    #pdf-modal-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem; font-weight: 600;
+      color: var(--c-ink); white-space: nowrap;
+      overflow: hidden; text-overflow: ellipsis;
+      max-width: 60%;
+    }
+    .dark #pdf-modal-title { color: var(--c-darktext); }
+    #pdf-modal-close {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 2.2rem; height: 2.2rem; border-radius: 50%;
+      border: 1px solid rgba(28,28,26,0.1);
+      background: rgba(28,28,26,0.06);
+      color: var(--c-ink); cursor: pointer;
+      transition: background var(--t-fast) ease, transform var(--t-fast) ease;
+    }
+    .dark #pdf-modal-close { border-color: rgba(255,255,255,0.08); background: rgba(255,255,255,0.07); color: var(--c-darktext); }
+    #pdf-modal-close:hover { background: rgba(28,28,26,0.14); transform: scale(1.08); }
+    .dark #pdf-modal-close:hover { background: rgba(255,255,255,0.14); }
+    #pdf-modal-close:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(42,88,64,0.25); }
+    .dark #pdf-modal-close:focus-visible { box-shadow: 0 0 0 3px rgba(77,158,114,0.3); }
+    #pdf-modal-close svg { pointer-events: none; }
+    #pdf-frame-wrap {
+      flex: 1; position: relative; background: #f0ece4;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .dark #pdf-frame-wrap { background: #111110; }
+    #pdf-frame {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      border: none;
+      object-fit: contain;
+    }
+    #pdf-loading {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;
+      font-family: var(--font-body); font-size: 0.8rem;
+      color: var(--c-mist);
+      pointer-events: none;
+    }
+    .dark #pdf-loading { color: var(--c-darkmuted); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #pdf-loading-spinner {
+      width: 2.2rem; height: 2.2rem; border-radius: 50%;
+      border: 2.5px solid rgba(42,88,64,0.15);
+      border-top-color: var(--c-forest);
+      animation: spin 0.75s linear infinite;
+    }
+    .dark #pdf-loading-spinner { border-top-color: var(--c-darkforest); }
+
+    @media (max-width: 640px) {
+      #pdf-modal { padding: 0.5rem; align-items: flex-end; }
+      #pdf-modal-inner { height: 85vh; max-height: none; border-radius: var(--r-lg) var(--r-lg) 0 0; }
+    }
+  </style>
+  <script>
+    (() => {
+      const stored = localStorage.getItem('color-theme');
+      const sys = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (stored === 'dark' || (!stored && sys)) document.documentElement.classList.add('dark');
+    })();
+  </script>
+</head>
+<body class="bg-cream text-ink dark:bg-darkbg dark:text-darktext font-body antialiased transition-colors duration-300">
+
+  <!-- Cursor glow (hidden on touch via CSS) -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="fixed top-0 left-0 z-50 h-[2px] w-full">
+    <div id="progress-bar" class="h-full w-0 bg-gradient-to-r from-forest to-gold transition-none"></div>
+  </div>
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded-full focus:shadow-lg focus-visible:ring-2 focus-visible:ring-forest">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-cream/80 dark:bg-darkbg/80 border-b border-black/[0.06] dark:border-white/[0.05]">
+    <div class="max-w-screen-xl mx-auto px-5 md:px-10 py-3.5 flex items-center justify-between gap-4">
+
+      <a href="#" class="flex items-center gap-3 group flex-shrink-0 text-ink dark:text-darktext">
+        <img src="logo.png"       alt="Hafez logo" class="h-9 w-auto object-contain dark:hidden" loading="lazy" />
+        <img src="logo-white.png" alt="Hafez logo" class="h-9 w-auto object-contain hidden dark:block" loading="lazy" />
+        <div>
+          <span class="block font-display text-sm sm:text-[0.95rem] font-semibold leading-none tracking-[0.01em] transition-colors group-hover:text-forest dark:group-hover:text-darkforest whitespace-nowrap" data-i18n="brandName">
+            Dr Abdurrahman M. Hafez
+          </span>
+          <span class="hidden sm:block text-[9px] uppercase tracking-[0.24em] text-mist dark:text-darkmuted mt-1" data-i18n="brandTagline">
+            Medical & Editorial Designer
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-[10px] uppercase tracking-[0.3em] font-medium text-mist dark:text-darkmuted" aria-label="Main navigation">
+        <a href="#work"      class="nav-link hover:text-ink dark:hover:text-darktext transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navWork">Work</a>
+        <a href="#ba-work"   class="nav-link hover:text-ink dark:hover:text-darktext transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navBA">Before / After</a>
+        <a href="#services"  class="nav-link hover:text-ink dark:hover:text-darktext transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navServices">Services</a>
+        <a href="#about"     class="nav-link hover:text-ink dark:hover:text-darktext transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navAbout">About</a>
+        <a href="#contact"   class="nav-link hover:text-ink dark:hover:text-darktext transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://wa.me/201XXXXXXXXX" target="_blank" rel="noopener"
+          class="hidden md:inline-flex items-center gap-2 h-9 px-4 rounded-full text-[10px] font-semibold uppercase tracking-[0.2em] bg-[#25D366] text-white hover:bg-[#1fcc60] transition-all duration-200 hover:shadow-md hover:shadow-[#25D366]/30 whitespace-nowrap focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <svg class="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span data-i18n="whatsappLabel">WhatsApp</span>
+        </a>
+
+        <a href="#contact"
+          class="hidden md:inline-flex items-center gap-2 h-9 px-5 rounded-full text-[10px] font-semibold btn-shimmer text-white whitespace-nowrap focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <span class="w-1.5 h-1.5 rounded-full bg-white/60 animate-pulse flex-shrink-0"></span>
+          <span class="font-semibold text-[10px] uppercase tracking-[0.22em]" data-i18n="hireMe">Hire Me</span>
+        </a>
+
+        <button id="lang-toggle" type="button" aria-label="Switch to Arabic" class="lang-switch focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <span class="lang-switch-label" id="lang-toggle-label">AR</span>
+        </button>
+
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-checked="false" role="switch"
+          class="theme-switch focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <span class="theme-switch-label" data-i18n="darkModeLabel">Dark Mode</span>
+          <span class="theme-switch-track" aria-hidden="true">
+            <span class="theme-switch-thumb">
+              <svg id="icon-moon" class="hidden w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+              <svg id="icon-sun"  class="hidden w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1z"/></svg>
+            </span>
+          </span>
+        </button>
+
+        <button id="menu-open" type="button" aria-label="Open menu" aria-expanded="false"
+          class="lg:hidden w-10 h-10 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center hover:bg-black/10 dark:hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h10M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu"
+    class="fixed inset-0 z-[100] hidden bg-cream/95 dark:bg-darkbg/95">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-black/[0.06] dark:border-white/[0.05]">
+      <span class="font-display text-xl font-semibold text-ink dark:text-darktext" data-i18n="menuTitle">Menu</span>
+      <button id="menu-close" type="button" aria-label="Close menu"
+        class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col items-center justify-center gap-7" id="mobile-menu-nav" aria-label="Mobile navigation">
+      <a href="#work"     class="mobile-nav font-display text-4xl italic hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navWork">Work</a>
+      <a href="#ba-work"  class="mobile-nav font-display text-4xl italic hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navBA">Before / After</a>
+      <a href="#services" class="mobile-nav font-display text-4xl italic hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navServices">Services</a>
+      <a href="#about"    class="mobile-nav font-display text-4xl italic hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navAbout">About</a>
+      <a href="#contact"  class="mobile-nav font-display text-4xl italic hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="navContact">Contact</a>
+      <div class="flex gap-3 mt-4">
+        <a href="https://wa.me/201XXXXXXXXX" target="_blank" rel="noopener" class="bg-[#25D366] text-white px-6 py-3 rounded-full text-[11px] uppercase tracking-[0.28em] font-semibold focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-i18n="whatsappLabel">WhatsApp</a>
+        <a href="#contact" class="mobile-nav btn-shimmer text-white px-6 py-3 rounded-full text-[11px] font-semibold focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <span class="cta-bilingual">
+            <span class="cta-en text-[9px]" data-i18n="ctaStartProject">Start Your Project</span>
+            <span class="cta-divider" aria-hidden="true">/</span>
+            <span class="cta-ar text-[13px]" lang="ar" data-i18n="ctaStartProjectAr">ابدأ مشروعك</span>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="max-w-screen-xl mx-auto px-5 md:px-10 pt-24 pb-28 md:pt-32 md:pb-36 reveal">
+      <div class="max-w-4xl">
+        <div class="flex flex-wrap gap-3 mb-8">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-forest/20 dark:border-darkforest/25 bg-forest/5 dark:bg-darkforest/10 text-[10px] uppercase tracking-[0.28em] text-forest dark:text-darkforest font-medium">
+            <span class="relative flex h-2 w-2">
+              <span class="ping-slow absolute inline-flex h-full w-full rounded-full bg-forest/40 dark:bg-darkforest/40"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-forest dark:bg-darkforest"></span>
+            </span>
+            <span data-i18n="badgeAvailable">Available for Projects</span>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full medical-badge text-[10px] uppercase tracking-[0.28em] text-medical dark:text-darkmedi font-medium">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm2 2V5h1v1H5zM3 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zm2 2v-1h1v1H5zM13 3a1 1 0 00-1 1v3a1 1 0 001 1h3a1 1 0 001-1V4a1 1 0 00-1-1h-3zm1 2v1h1V5h-1z" clip-rule="evenodd"/><path d="M11 4a1 1 0 10-2 0v1a1 1 0 00-2 0v1a1 1 0 00-2 0v1a1 1 0 102 0V6h1v1a1 1 0 102 0V4z"/></svg>
+            <span data-i18n="badgeMedical">Medical Content Specialist</span>
+          </div>
+        </div>
+
+        <h1 class="font-display hero-title font-semibold tracking-tight mb-6" data-i18n="heroTitle">
+          Dr Abdurrahman<br/>
+          <em class="font-light not-italic text-forest dark:text-darkforest">M. Hafez</em>
+        </h1>
+
+        <p class="font-display text-2xl md:text-3xl font-light text-mist dark:text-darkmuted mb-4 mt-6">
+          <span id="hero-role-prefix" data-i18n="heroRolePrefix">Medical & Editorial</span> <span class="text-ink dark:text-darktext font-semibold typed-cursor" id="typed-text">Designer</span>
+        </p>
+
+        <p class="max-w-xl text-sm md:text-[15px] leading-7 text-mist dark:text-darkmuted font-light mb-4" data-i18n="heroDesc">
+          Crafting medical content, academic books, structured PDFs, and educational materials for universities, medical colleges, and institutions — with deep specialisation in the <span class="text-medical dark:text-darkmedi font-medium">medical field</span>.
+        </p>
+        <p class="max-w-xl text-sm leading-8 text-mist dark:text-darkmuted mb-8 font-arabic" dir="rtl" data-i18n="heroDescAr">
+          تصميم محتوى طبي واحترافي يخدم الطلاب والأطباء والمؤسسات التعليمية.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mb-10">
+          <span class="px-3 py-1 rounded-full border border-medical/25 text-[10px] tracking-widest uppercase text-medical dark:text-darkmedi bg-medical/5" data-i18n="tagMedical">#MedicalContent</span>
+          <span class="px-3 py-1 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] tracking-widest uppercase text-mist dark:text-darkmuted" data-i18n="tagBook">#BookLayout</span>
+          <span class="px-3 py-1 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] tracking-widest uppercase text-mist dark:text-darkmuted" data-i18n="tagPDF">#PDFDesign</span>
+          <span class="px-3 py-1 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] tracking-widest uppercase text-mist dark:text-darkmuted" data-i18n="tagQB">#QuestionBanks</span>
+          <span class="px-3 py-1 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] tracking-widest uppercase text-mist dark:text-darkmuted" data-i18n="tagSummaries">#Summaries</span>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#work"
+            class="btn-shimmer text-white inline-flex items-center gap-2.5 px-8 py-4 rounded-full text-[11px] uppercase tracking-[0.3em] font-semibold shadow-lg focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            <span data-i18n="btnViewWork">View My Work</span>
+          </a>
+          <a href="#contact"
+            class="btn-outline text-ink dark:text-darktext inline-flex items-center gap-2.5 px-8 py-4 rounded-full text-[13px] font-medium focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            <span class="cta-bilingual">
+              <span class="cta-en text-[10px]" data-i18n="ctaStartProject">Start Your Project</span>
+              <span class="cta-divider" aria-hidden="true">/</span>
+              <span class="cta-ar" lang="ar" data-i18n="ctaStartProjectAr">ابدأ مشروعك</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-20">
+        <div class="stat-card p-6 rounded-2xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02] text-center reveal reveal-delay-1">
+          <p class="font-display text-5xl font-semibold text-forest dark:text-darkforest stat-number" data-target="40">0</p>
+          <p class="text-[9px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted mt-1.5 font-medium" data-i18n="statBooks">+ Book Layouts</p>
+        </div>
+        <div class="stat-card p-6 rounded-2xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02] text-center reveal reveal-delay-2">
+          <p class="font-display text-5xl font-semibold text-forest dark:text-darkforest stat-number" data-target="120">0</p>
+          <p class="text-[9px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted mt-1.5 font-medium" data-i18n="statPDFs">+ PDF Documents</p>
+        </div>
+        <div class="stat-card p-6 rounded-2xl border border-medical/15 bg-medical/5 dark:bg-darkmedi/5 text-center reveal reveal-delay-3">
+          <p class="font-display text-5xl font-semibold text-medical dark:text-darkmedi stat-number" data-target="6">0</p>
+          <p class="text-[9px] uppercase tracking-[0.28em] text-medical/70 dark:text-darkmedi/70 mt-1.5 font-medium" data-i18n="statInstitutions">Medical Institutions</p>
+        </div>
+        <div class="stat-card p-6 rounded-2xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02] text-center reveal reveal-delay-4">
+          <p class="font-display text-5xl font-semibold text-gold dark:text-darkgold stat-number" data-target="4">0</p>
+          <p class="text-[9px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted mt-1.5 font-medium" data-i18n="statYears">Years Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="border-y border-black/[0.06] dark:border-white/[0.05] py-3.5 overflow-hidden bg-white/30 dark:bg-white/[0.015]">
+      <div class="marquee-track select-none" aria-hidden="true">
+        <span class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted font-medium whitespace-nowrap">
+          &nbsp;&nbsp;Medical Content Design &nbsp;·&nbsp; Book Layout &nbsp;·&nbsp; PDF Typesetting &nbsp;·&nbsp; Question Banks &nbsp;·&nbsp; PowerPoint Presentations &nbsp;·&nbsp; Mind Maps &nbsp;·&nbsp; Summaries &nbsp;·&nbsp; Arabic Typography &nbsp;·&nbsp; Before &amp; After &nbsp;·&nbsp; University Publishing &nbsp;·&nbsp; Cairo University · Assiut University &nbsp;·&nbsp;
+          Medical Content Design &nbsp;·&nbsp; Book Layout &nbsp;·&nbsp; PDF Typesetting &nbsp;·&nbsp; Question Banks &nbsp;·&nbsp; PowerPoint Presentations &nbsp;·&nbsp; Mind Maps &nbsp;·&nbsp; Summaries &nbsp;·&nbsp; Arabic Typography &nbsp;·&nbsp; Before &amp; After &nbsp;·&nbsp; University Publishing &nbsp;·&nbsp; Cairo University · Assiut University &nbsp;·&nbsp;
+        </span>
+      </div>
+    </div>
+
+    <!-- WORK (9 projects) -->
+    <section id="work" class="max-w-screen-xl mx-auto px-5 md:px-10 py-16 md:py-24 reveal">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-3" data-i18n="workEyebrow">Selected Works</p>
+          <h2 class="font-display text-4xl md:text-5xl font-semibold" data-i18n="workTitle">Volumes 2022–2026</h2>
+          <p class="mt-3 text-sm text-mist dark:text-darkmuted font-light max-w-sm"><span data-i18n="workDesc1">A curated selection —</span> <span class="text-ink dark:text-darktext" data-i18n="workDesc2">want to see more?</span> <span data-i18n="workDesc3">Download the full portfolio below.</span></p>
+        </div>
+        <div class="flex flex-wrap gap-2" role="tablist" aria-label="Project categories">
+          <button class="filter-tab active px-4 py-2 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] uppercase tracking-[0.22em] font-medium hover:border-forest/40 transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-filter="all" role="tab" aria-selected="true" data-i18n="filterAll">All</button>
+          <button class="filter-tab px-4 py-2 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] uppercase tracking-[0.22em] font-medium hover:border-forest/40 transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-filter="print" role="tab" aria-selected="false" data-i18n="filterPrint">Books & PDF</button>
+          <button class="filter-tab px-4 py-2 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] uppercase tracking-[0.22em] font-medium hover:border-forest/40 transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-filter="pptx" role="tab" aria-selected="false" data-i18n="filterPptx">Presentations</button>
+          <button class="filter-tab px-4 py-2 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] uppercase tracking-[0.22em] font-medium hover:border-forest/40 transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-filter="mindmap" role="tab" aria-selected="false" data-i18n="filterMindmap">Mind Maps</button>
+          <button class="filter-tab px-4 py-2 rounded-full border border-black/[0.08] dark:border-white/[0.07] text-[10px] uppercase tracking-[0.22em] font-medium hover:border-forest/40 transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-filter="academic" role="tab" aria-selected="false" data-i18n="filterAcademic">Summaries</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-5" id="projects-grid">
+        <!-- Project cards populated by JS -->
+      </div>
+
+      <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 p-8 rounded-3xl border border-forest/15 dark:border-darkforest/15 bg-forest/5 dark:bg-darkforest/5">
+        <div class="text-center sm:text-left">
+          <p class="font-display text-xl font-semibold" data-i18n="moreSamplesTitle">Want to see more samples?</p>
+          <p class="text-sm text-mist dark:text-darkmuted font-arabic mt-1" dir="rtl" data-i18n="moreSamplesAr">تواصل معي لتحميل الملف الكامل — كتب، ملخصات، عروض تقديمية، وأكثر.</p>
+        </div>
+        <a href="mailto:hello@hafez.design?subject=Full%20Portfolio%20Request"
+          class="flex-shrink-0 btn-shimmer text-white inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[10px] font-semibold whitespace-nowrap focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span class="cta-bilingual">
+            <span class="cta-en text-[9px]" data-i18n="btnRequestPortfolio">Request Portfolio</span>
+            <span class="cta-divider" aria-hidden="true">/</span>
+            <span class="cta-ar text-[13px]" lang="ar" data-i18n="btnRequestPortfolioAr">اطلب الملف الكامل</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="border-t border-black/[0.06] dark:border-white/[0.04] py-16 md:py-24 reveal">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-10">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-3" data-i18n="testimonialsEyebrow">Client Feedback</p>
+            <h2 class="font-display section-title font-semibold">
+              <span data-i18n="testimonialsTitle1">Trusted by those who need</span>
+              <em class="italic font-light text-forest dark:text-darkforest" data-i18n="testimonialsTitle2">clarity.</em>
+            </h2>
+          </div>
+          <p class="text-sm text-mist dark:text-darkmuted font-light max-w-xs md:text-right" data-i18n="testimonialsDesc">Real words from clients — clearer files, faster review, ready to publish.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <article class="testimonial-card flex flex-col">
+            <div class="flex gap-0.5 mb-4" aria-hidden="true">
+              <svg class="w-3.5 h-3.5 text-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="font-arabic text-[15px] leading-[1.85] text-ink dark:text-darktext flex-1" lang="ar" data-i18n="testimonial1Text">
+              "جربت أكثر من مصمم لملخصات الكلية، عبدالرحمن الوحيد اللي فهم المحتوى الطبي صح. الملفات طلعت واضحة ومتسلسلة، والطلاب بيرجعوا يقرأوا نفس الملف أكتر من مرة."
+            </p>
+            <div class="mt-5 pt-4 border-t border-black/[0.06] dark:border-white/[0.05] flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-forest/10 dark:bg-darkforest/15 flex items-center justify-center flex-shrink-0 font-arabic font-bold text-forest dark:text-darkforest text-sm" aria-hidden="true">م</div>
+              <div class="font-arabic" lang="ar">
+                <p class="font-semibold text-sm text-ink dark:text-darktext leading-snug" data-i18n="testimonial1Name">د. محمد العمر</p>
+                <p class="text-[11px] text-mist dark:text-darkmuted mt-0.5" data-i18n="testimonial1Role">طب الأسرة · مسار للتعليم الطبي</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card flex flex-col">
+            <div class="flex gap-0.5 mb-4" aria-hidden="true">
+              <svg class="w-3.5 h-3.5 text-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-[15px] leading-[1.75] text-ink dark:text-darktext flex-1" data-i18n="testimonial2Text">
+              "We were reviewing a 280-page internal medicine textbook and the formatting was slowing down the whole editorial process. After the redesign, review time dropped noticeably — the visual hierarchy just made everything easier to navigate."
+            </p>
+            <div class="mt-5 pt-4 border-t border-black/[0.06] dark:border-white/[0.05] flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-medical/10 dark:bg-darkmedi/15 flex items-center justify-center flex-shrink-0 font-semibold text-medical dark:text-darkmedi text-xs" aria-hidden="true">S</div>
+              <div>
+                <p class="font-semibold text-sm text-ink dark:text-darktext leading-snug" data-i18n="testimonial2Name">Sarah A.</p>
+                <p class="text-[11px] text-mist dark:text-darkmuted mt-0.5" data-i18n="testimonial2Role">Academic Review Lead · Medical Education</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="flex flex-col gap-3">
+            <div class="feedback-carousel flex-1" id="feedback-carousel" role="region" aria-roledescription="carousel" aria-label="Client feedback screenshots">
+              <div class="feedback-track" id="feedback-track"></div>
+            </div>
+            <div class="flex items-center justify-center gap-2 text-ink dark:text-darktext" id="feedback-dots" role="tablist" aria-label="Feedback slides"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section id="ba-work" class="border-t border-black/[0.06] dark:border-white/[0.04] py-16 md:py-24 reveal">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-10">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-3" data-i18n="baEyebrow">Before / After</p>
+            <h2 class="font-display section-title font-semibold">
+              <span data-i18n="baTitle1">Drag the line and see the</span>
+              <em class="italic font-light text-forest dark:text-darkforest" data-i18n="baTitle2">difference.</em>
+            </h2>
+            <p class="mt-3 text-sm text-mist dark:text-darkmuted font-light max-w-md" data-i18n="baDesc">A professional before/after presentation that stays responsive, keyboard-friendly, and ready for your real case files.</p>
+          </div>
+          <p class="font-arabic text-2xl font-bold text-forest dark:text-darkforest" lang="ar" data-i18n="baLabelAr">قبل وبعد</p>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="comparison-card">
+            <div class="comparison-frame">
+              <span class="comparison-badge before" data-i18n="labelBefore">Before</span>
+              <span class="comparison-badge after" data-i18n="labelAfter">After</span>
+              <div class="compare-layer">
+                <img src="before-1.jpg" alt="Before design comparison one" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+                <div class="comparison-empty text-mist dark:text-darkmuted">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M14 8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <p class="text-[10px] uppercase tracking-[0.22em]" data-i18n="addBefore1">Add before-1.jpg</p>
+                </div>
+              </div>
+              <div class="comparison-after">
+                <img src="after-1.jpg" alt="After design comparison one" loading="lazy" onerror="this.parentElement.parentElement.classList.add('is-empty')" />
+                <div class="comparison-empty text-forest dark:text-darkforest">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M14 8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <p class="text-[10px] uppercase tracking-[0.22em]" data-i18n="addAfter1">Add after-1.jpg</p>
+                </div>
+              </div>
+              <div class="comparison-divider" aria-hidden="true">
+                <span class="comparison-handle">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 12h8m-8 0 2.5-2.5M8 12l2.5 2.5M16 12l-2.5-2.5M16 12l-2.5 2.5"/></svg>
+                </span>
+              </div>
+              <input type="range" min="0" max="100" value="54" class="comparison-range" aria-label="Compare before and after for case study one" aria-valuemin="0" aria-valuemax="100" aria-valuenow="54" />
+            </div>
+            <div class="comparison-meta">
+              <div>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted">Case 01</p>
+                <p class="font-display text-xl font-semibold mt-1" data-i18n="case1Title">Behavior Science Layout</p>
+              </div>
+              <p class="font-arabic text-sm text-mist dark:text-darkmuted" lang="ar" data-i18n="case1Hint">حرّك المؤشر يمينًا ويسارًا</p>
+            </div>
+          </article>
+
+          <article class="comparison-card">
+            <div class="comparison-frame">
+              <span class="comparison-badge before" data-i18n="labelBefore">Before</span>
+              <span class="comparison-badge after" data-i18n="labelAfter">After</span>
+              <div class="compare-layer">
+                <img src="before-2.jpg" alt="Before design comparison two" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+                <div class="comparison-empty text-mist dark:text-darkmuted">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M14 8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <p class="text-[10px] uppercase tracking-[0.22em]" data-i18n="addBefore2">Add before-2.jpg</p>
+                </div>
+              </div>
+              <div class="comparison-after">
+                <img src="after-2.jpg" alt="After design comparison two" loading="lazy" onerror="this.parentElement.parentElement.classList.add('is-empty')" />
+                <div class="comparison-empty text-forest dark:text-darkforest">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M14 8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <p class="text-[10px] uppercase tracking-[0.22em]" data-i18n="addAfter2">Add after-2.jpg</p>
+                </div>
+              </div>
+              <div class="comparison-divider" aria-hidden="true">
+                <span class="comparison-handle">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 12h8m-8 0 2.5-2.5M8 12l2.5 2.5M16 12l-2.5-2.5M16 12l-2.5 2.5"/></svg>
+                </span>
+              </div>
+              <input type="range" min="0" max="100" value="48" class="comparison-range" aria-label="Compare before and after for case study two" aria-valuemin="0" aria-valuemax="100" aria-valuenow="48" />
+            </div>
+            <div class="comparison-meta">
+              <div>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted">Case 02</p>
+                <p class="font-display text-xl font-semibold mt-1" data-i18n="case2Title">Clinical Summary Refresh</p>
+              </div>
+              <p class="font-arabic text-sm text-mist dark:text-darkmuted" lang="ar" data-i18n="case2Hint">مناسب لعرض التحسين بصريًا</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 p-6 rounded-3xl border border-forest/15 dark:border-darkforest/15 bg-forest/5 dark:bg-darkforest/5">
+          <div class="flex-1 text-center sm:text-left">
+            <p class="font-display text-xl font-semibold" data-i18n="ctaTransformationTitle">Ready for your own transformation?</p>
+            <p class="font-arabic text-base mt-1 text-mist dark:text-darkmuted" lang="ar" data-i18n="ctaTransformationAr">حرّك السلايدر وشوف الفرق الحقيقي، ثم شارك ملفك لنصنع نسخة أوضح وأقوى.</p>
+          </div>
+          <a href="https://wa.me/201XXXXXXXXX" target="_blank" rel="noopener"
+            class="flex-shrink-0 bg-[#25D366] hover:bg-[#1ebe5a] text-white inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[10px] font-semibold transition-all whitespace-nowrap focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <span class="cta-bilingual">
+              <span class="cta-en text-[9px]" data-i18n="ctaStartNow">Start Now</span>
+              <span class="cta-divider" aria-hidden="true">/</span>
+              <span class="cta-ar text-[13px]" lang="ar" data-i18n="ctaStartNowAr">ابدأ الآن</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="border-t border-black/[0.06] dark:border-white/[0.04] py-16 md:py-24 reveal">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 items-start">
+          <div class="space-y-5">
+            <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted" data-i18n="servicesEyebrow">What I Offer</p>
+            <h2 class="font-display section-title font-semibold">
+              <span data-i18n="servicesTitle1">Services built for</span> <em class="italic font-light text-forest dark:text-darkforest" data-i18n="servicesTitle2">impact.</em>
+            </h2>
+            <p class="font-arabic text-lg text-mist dark:text-darkmuted" dir="rtl" data-i18n="servicesSubtitleAr">من فكرة إلى تصميم محترف.</p>
+            <a href="#contact" class="inline-flex mt-4 btn-shimmer text-white items-center gap-2 px-7 py-3.5 rounded-full text-[13px] font-medium focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <span class="cta-bilingual">
+                <span class="cta-en text-[9px]" data-i18n="btnConsultation">Free Consultation</span>
+                <span class="cta-divider" aria-hidden="true">/</span>
+                <span class="cta-ar text-[13px]" lang="ar" data-i18n="btnConsultationAr">احجز استشارة مجانية</span>
+              </span>
+            </a>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4" id="services-list">
+            <!-- Service cards populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-black/[0.06] dark:border-white/[0.04] py-16 md:py-24 reveal">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-20 items-start">
+          <div class="relative lg:sticky lg:top-28">
+            <div class="relative group">
+              <div class="absolute -inset-3 rounded-3xl border border-forest/10 dark:border-darkforest/15 rotate-2 transition-transform duration-700 group-hover:rotate-0"></div>
+              <div class="absolute -inset-6 rounded-3xl border border-gold/10 dark:border-darkgold/10 -rotate-1 transition-transform duration-700 group-hover:rotate-0"></div>
+              <div class="relative aspect-[4/5] max-w-sm mx-auto rounded-3xl overflow-hidden shadow-lift">
+                <img
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop"
+                  alt="Dr Abdurrahman M. Hafez"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy" decoding="async"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6">
+                  <div class="medical-badge rounded-2xl px-4 py-3">
+                    <p class="text-[9px] uppercase tracking-[0.28em] text-medical dark:text-darkmedi font-medium" data-i18n="aboutBadge">Medical Content Specialist</p>
+                    <p class="text-white font-display text-lg font-semibold mt-0.5" data-i18n="aboutLocation">Cairo, Egypt</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-10 p-7 rounded-3xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02]" id="skills-section">
+              <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-5" data-i18n="skillsTitle">Tools & Software</p>
+              <div class="space-y-3.5" id="skills-bars"></div>
+            </div>
+          </div>
+          <div class="space-y-10">
+            <div>
+              <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-5" data-i18n="aboutEyebrow">About Me</p>
+              <h2 class="font-display section-title font-semibold mb-6">
+                <span data-i18n="aboutTitle1">Where design meets</span><br/><em class="italic font-light text-medical dark:text-darkmedi" data-i18n="aboutTitle2">medicine.</em>
+              </h2>
+              <div class="space-y-4 text-sm md:text-[15px] leading-7 text-mist dark:text-darkmuted font-light max-w-lg">
+                <p data-i18n="aboutP1">I'm Dr Abdurrahman M. Hafez, a Cairo-based medical content designer and editorial specialist with a deep focus on the medical and academic fields.</p>
+                <p data-i18n="aboutP2">Well-designed medical content doesn't just look good — it helps students learn faster, doctors recall better, and institutions communicate with authority.</p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="px-3.5 py-1.5 rounded-full bg-medical/8 dark:bg-darkmedi/10 text-medical dark:text-darkmedi text-[10px] uppercase tracking-[0.2em] font-medium" data-i18n="tagMedicalContent">Medical Content</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-forest/8 dark:bg-darkforest/10 text-forest dark:text-darkforest text-[10px] uppercase tracking-[0.2em] font-medium" data-i18n="tagBookLayout">Book Layout</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-forest/8 dark:bg-darkforest/10 text-forest dark:text-darkforest text-[10px] uppercase tracking-[0.2em] font-medium" data-i18n="tagQuestionBanks">Question Banks</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-gold/10 dark:bg-darkgold/10 text-gold dark:text-darkgold text-[10px] uppercase tracking-[0.2em] font-medium" data-i18n="tagArabicType">Arabic Typography</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-8" data-i18n="experienceEyebrow">Experience</p>
+              <div class="tl-wrap space-y-7" id="timeline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="border-t border-black/[0.06] dark:border-white/[0.04] py-16 md:py-24 reveal">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-10">
+        <div class="text-center mb-14">
+          <p class="text-[10px] uppercase tracking-[0.35em] text-mist dark:text-darkmuted mb-3" data-i18n="contactEyebrow">Start a Conversation</p>
+          <h2 class="font-display section-title font-semibold">
+            <span data-i18n="contactTitle1">Let's make something</span><br /><em class="italic font-light text-forest dark:text-darkforest" data-i18n="contactTitle2">worth reading.</em>
+          </h2>
+          <p class="font-arabic text-base text-mist dark:text-darkmuted mt-4" dir="rtl" data-i18n="contactSubtitleAr">لنصنع شيئاً يستحق القراءة.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div class="space-y-5">
+            <a href="https://wa.me/201XXXXXXXXX" target="_blank" rel="noopener"
+              class="group flex items-start gap-5 p-7 rounded-3xl border-2 border-[#25D366]/40 bg-[#25D366]/8 hover:bg-[#25D366]/15 hover:border-[#25D366]/70 transition-all focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+              <div class="w-12 h-12 rounded-2xl bg-[#25D366]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#25D366]/30 transition-colors" aria-hidden="true">
+                <svg class="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-[#25D366]/70 font-medium mb-0.5" data-i18n="waLabel">Fastest Response</p>
+                <p class="font-semibold text-lg group-hover:text-[#25D366] transition-colors" data-i18n="waTitle">Chat on WhatsApp</p>
+                <p class="text-xs text-mist dark:text-darkmuted font-arabic mt-0.5" dir="rtl" data-i18n="waSubtitleAr">أرد في دقائق.</p>
+              </div>
+            </a>
+            <a href="mailto:hello@hafez.design"
+              class="group flex items-start gap-5 p-7 rounded-3xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02] hover:border-forest/30 dark:hover:border-darkforest/30 transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+              <div class="w-12 h-12 rounded-2xl bg-forest/8 dark:bg-darkforest/10 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5 text-forest dark:text-darkforest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted mb-1" data-i18n="emailLabel">Email</p>
+                <p class="font-light text-lg group-hover:text-forest dark:group-hover:text-darkforest transition-colors">hello@hafez.design</p>
+              </div>
+            </a>
+            <div class="flex items-start gap-5 p-7 rounded-3xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02]">
+              <div class="w-12 h-12 rounded-2xl bg-gold/10 dark:bg-darkgold/10 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5 text-gold dark:text-darkgold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted mb-1" data-i18n="locationLabel">Based in</p>
+                <p class="font-light text-lg" data-i18n="locationValue">Cairo, Egypt · Remote Worldwide</p>
+                <p class="text-sm text-mist dark:text-darkmuted font-arabic mt-1" dir="rtl" data-i18n="locationAr">القاهرة، مصر · متاح للعمل عن بُعد</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl border border-black/[0.08] dark:border-white/[0.06] text-[10px] uppercase tracking-[0.25em] font-medium hover:border-forest dark:hover:border-darkforest hover:text-forest dark:hover:text-darkforest transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-i18n="linkBehance">Behance</a>
+              <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl border border-black/[0.08] dark:border-white/[0.06] text-[10px] uppercase tracking-[0.25em] font-medium hover:border-forest dark:hover:border-darkforest hover:text-forest dark:hover:text-darkforest transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-i18n="linkLinkedIn">LinkedIn</a>
+              <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl border border-black/[0.08] dark:border-white/[0.06] text-[10px] uppercase tracking-[0.25em] font-medium hover:border-forest dark:hover:border-darkforest hover:text-forest dark:hover:text-darkforest transition-all focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" data-i18n="linkInstagram">Instagram</a>
+            </div>
+          </div>
+          <div class="bg-white/62 dark:bg-white/[0.03] border border-black/[0.06] dark:border-white/[0.04] rounded-3xl p-8 md:p-10">
+            <h3 class="font-display text-2xl font-semibold mb-1" data-i18n="formTitle">Send a message</h3>
+            <p class="text-sm text-mist dark:text-darkmuted font-arabic mb-6" dir="rtl" data-i18n="formSubtitleAr">أو راسلني مباشرة على واتساب لرد أسرع.</p>
+            <form id="contact-form" class="space-y-4" onsubmit="return false;">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="f-name" class="block text-[10px] uppercase tracking-[0.25em] text-mist dark:text-darkmuted mb-2" data-i18n="labelName">Name *</label>
+                  <input id="f-name" type="text" placeholder="Your name" aria-required="true" required class="w-full px-4 py-3.5 rounded-xl border border-black/[0.1] dark:border-white/[0.08] bg-transparent text-sm placeholder:text-mist/50 dark:placeholder:text-darkmuted/50 focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" />
+                  <p class="text-[10px] text-red-600 dark:text-red-400 mt-1 hidden" id="err-name" data-i18n="errName">Please enter your name.</p>
+                </div>
+                <div>
+                  <label for="f-email" class="block text-[10px] uppercase tracking-[0.25em] text-mist dark:text-darkmuted mb-2" data-i18n="labelEmail">Email *</label>
+                  <input id="f-email" type="email" placeholder="you@example.com" aria-required="true" required class="w-full px-4 py-3.5 rounded-xl border border-black/[0.1] dark:border-white/[0.08] bg-transparent text-sm placeholder:text-mist/50 dark:placeholder:text-darkmuted/50 focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg" />
+                  <p class="text-[10px] text-red-600 dark:text-red-400 mt-1 hidden" id="err-email" data-i18n="errEmail">Please enter a valid email.</p>
+                </div>
+              </div>
+              <div>
+                <label for="f-service" class="block text-[10px] uppercase tracking-[0.25em] text-mist dark:text-darkmuted mb-2" data-i18n="labelService">Service *</label>
+                <select id="f-service" aria-required="true" required class="w-full px-4 py-3.5 rounded-xl border border-black/[0.1] dark:border-white/[0.08] bg-cream dark:bg-darkbg text-sm focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+                  <option value="" data-i18n="optionSelect">Select a service…</option>
+                  <option data-i18n="optionBook">Medical Book / Textbook</option>
+                  <option data-i18n="optionPDF">Books & PDF Typesetting</option>
+                  <option data-i18n="optionPptx">PowerPoint Presentation</option>
+                  <option data-i18n="optionMindmap">Mind Maps</option>
+                  <option data-i18n="optionSummaries">Summaries & Study Sheets</option>
+                  <option data-i18n="optionQB">Question Bank Writing</option>
+                  <option data-i18n="optionOther">Other</option>
+                </select>
+                <p class="text-[10px] text-red-600 dark:text-red-400 mt-1 hidden" id="err-service" data-i18n="errService">Please select a service.</p>
+              </div>
+              <div>
+                <label for="f-message" class="block text-[10px] uppercase tracking-[0.25em] text-mist dark:text-darkmuted mb-2" data-i18n="labelMessage">Message *</label>
+                <textarea id="f-message" rows="4" placeholder="Tell me about your project…" aria-required="true" required class="w-full px-4 py-3.5 rounded-xl border border-black/[0.1] dark:border-white/[0.08] bg-transparent text-sm placeholder:text-mist/50 dark:placeholder:text-darkmuted/50 resize-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg"></textarea>
+                <p class="text-[10px] text-red-600 dark:text-red-400 mt-1 hidden" id="err-message" data-i18n="errMessage">Please enter a message.</p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <button id="submit-btn" type="submit"
+                  class="flex-1 btn-shimmer text-white py-4 rounded-xl text-[11px] uppercase tracking-[0.28em] font-semibold focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+                  <span data-i18n="btnSend">Send Message</span>
+                </button>
+                <a href="https://wa.me/201XXXXXXXXX" target="_blank" rel="noopener"
+                  class="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-xl text-[13px] font-arabic font-medium focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+                  راسلني على واتساب
+                </a>
+              </div>
+              <p class="text-center text-[10px] text-mist dark:text-darkmuted opacity-60">
+                <span data-i18n="orEmail">Or email directly:</span> <a href="mailto:hello@hafez.design" class="underline hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm">hello@hafez.design</a>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="mt-20 pt-8 border-t border-black/[0.06] dark:border-white/[0.04] flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <img src="logo.png"       alt="Hafez" class="h-7 w-auto object-contain dark:hidden opacity-70" loading="lazy" />
+            <img src="logo-white.png" alt="Hafez" class="h-7 w-auto object-contain hidden dark:block opacity-70" loading="lazy" />
+            <span class="text-mist dark:text-darkmuted text-[10px]" aria-hidden="true">·</span>
+            <span class="font-display text-base font-semibold">Dr Abdurrahman M. <em class="italic font-light text-forest dark:text-darkforest">Hafez</em></span>
+            <span class="text-mist dark:text-darkmuted text-[10px]" aria-hidden="true">·</span>
+            <span class="text-[9px] uppercase tracking-[0.3em] text-mist dark:text-darkmuted opacity-60">&copy; 2026</span>
+          </div>
+          <a href="#main" class="text-[10px] uppercase tracking-[0.28em] text-mist dark:text-darkmuted hover:text-forest dark:hover:text-darkforest transition-colors focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg rounded-sm" data-i18n="backToTop">Back to top ↑</a>
+        </div>
+        <div class="visitor-counter">
+          <p class="font-display text-2xl font-semibold tracking-[0.15em] tabular-nums">
+            <span id="visitor-count">000001</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <a id="wa-float" href="https://wa.me/201XXXXXXXXX" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+    class="fixed bottom-24 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/30 flex items-center justify-center focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <button id="to-top" type="button" aria-label="Back to top"
+    class="fixed bottom-6 right-5 z-40 hidden w-12 h-12 rounded-full bg-ink dark:bg-white text-white dark:text-ink shadow-lift hover:scale-110 transition-transform focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-cream dark:focus-visible:ring-offset-darkbg">
+    <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <div id="toast" role="status" aria-live="polite"
+    class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[9001] bg-forest dark:bg-darkforest text-white px-5 py-3.5 rounded-2xl shadow-lift text-sm font-medium pointer-events-none whitespace-nowrap">
+    <span data-i18n="toastMsg">✓ Message sent — I'll reply within 24 hours.</span>
+  </div>
+
+  <div id="pdf-modal" role="dialog" aria-modal="true" aria-label="PDF Viewer">
+    <div id="pdf-modal-inner">
+      <div id="pdf-modal-header">
+        <span id="pdf-modal-title">Document Preview</span>
+        <button id="pdf-modal-close" type="button" aria-label="Close PDF viewer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="pdf-frame-wrap">
+        <div id="pdf-loading">
+          <div id="pdf-loading-spinner"></div>
+          <span data-i18n="pdfLoading">Loading document…</span>
+        </div>
+        <iframe id="pdf-frame" title="PDF Viewer" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==================== DATA ====================
+    const i18nStrings = {
+      en: {
+        brandName: "Dr Abdurrahman M. Hafez",
+        brandTagline: "Medical & Editorial Designer",
+        navWork: "Work",
+        navBA: "Before / After",
+        navServices: "Services",
+        navAbout: "About",
+        navContact: "Contact",
+        whatsappLabel: "WhatsApp",
+        hireMe: "Hire Me",
+        darkModeLabel: "Dark Mode",
+        menuTitle: "Menu",
+        ctaStartProject: "Start Your Project",
+        ctaStartProjectAr: "ابدأ مشروعك",
+        badgeAvailable: "Available for Projects",
+        badgeMedical: "Medical Content Specialist",
+        heroTitle: 'Dr Abdurrahman<br/><em class="font-light not-italic text-forest dark:text-darkforest">M. Hafez</em>',
+        heroRolePrefix: "Medical & Editorial",
+        heroDesc: 'Crafting medical content, academic books, structured PDFs, and educational materials for universities, medical colleges, and institutions — with deep specialisation in the <span class="text-medical dark:text-darkmedi font-medium">medical field</span>.',
+        heroDescAr: "تصميم محتوى طبي واحترافي يخدم الطلاب والأطباء والمؤسسات التعليمية.",
+        tagMedical: "#MedicalContent",
+        tagBook: "#BookLayout",
+        tagPDF: "#PDFDesign",
+        tagQB: "#QuestionBanks",
+        tagSummaries: "#Summaries",
+        btnViewWork: "View My Work",
+        statBooks: "+ Book Layouts",
+        statPDFs: "+ PDF Documents",
+        statInstitutions: "Medical Institutions",
+        statYears: "Years Experience",
+        workEyebrow: "Selected Works",
+        workTitle: "Volumes 2022–2026",
+        workDesc1: "A curated selection —",
+        workDesc2: "want to see more?",
+        workDesc3: "Download the full portfolio below.",
+        filterAll: "All",
+        filterPrint: "Books & PDF",
+        filterPptx: "Presentations",
+        filterMindmap: "Mind Maps",
+        filterAcademic: "Summaries",
+        moreSamplesTitle: "Want to see more samples?",
+        moreSamplesAr: "تواصل معي لتحميل الملف الكامل — كتب، ملخصات، عروض تقديمية، وأكثر.",
+        btnRequestPortfolio: "Request Portfolio",
+        btnRequestPortfolioAr: "اطلب الملف الكامل",
+        testimonialsEyebrow: "Client Feedback",
+        testimonialsTitle1: "Trusted by those who need",
+        testimonialsTitle2: "clarity.",
+        testimonialsDesc: "Real words from clients — clearer files, faster review, ready to publish.",
+        testimonial1Text: '"جربت أكثر من مصمم لملخصات الكلية، عبدالرحمن الوحيد اللي فهم المحتوى الطبي صح. الملفات طلعت واضحة ومتسلسلة، والطلاب بيرجعوا يقرأوا نفس الملف أكتر من مرة."',
+        testimonial1Name: "د. محمد العمر",
+        testimonial1Role: "طب الأسرة · مسار للتعليم الطبي",
+        testimonial2Text: '"We were reviewing a 280-page internal medicine textbook and the formatting was slowing down the whole editorial process. After the redesign, review time dropped noticeably — the visual hierarchy just made everything easier to navigate."',
+        testimonial2Name: "Sarah A.",
+        testimonial2Role: "Academic Review Lead · Medical Education",
+        baEyebrow: "Before / After",
+        baTitle1: "Drag the line and see the",
+        baTitle2: "difference.",
+        baDesc: "A professional before/after presentation that stays responsive, keyboard-friendly, and ready for your real case files.",
+        baLabelAr: "قبل وبعد",
+        labelBefore: "Before",
+        labelAfter: "After",
+        addBefore1: "Add before-1.jpg",
+        addAfter1: "Add after-1.jpg",
+        addBefore2: "Add before-2.jpg",
+        addAfter2: "Add after-2.jpg",
+        case1Title: "Behavior Science Layout",
+        case1Hint: "حرّك المؤشر يمينًا ويسارًا",
+        case2Title: "Clinical Summary Refresh",
+        case2Hint: "مناسب لعرض التحسين بصريًا",
+        ctaTransformationTitle: "Ready for your own transformation?",
+        ctaTransformationAr: "حرّك السلايدر وشوف الفرق الحقيقي، ثم شارك ملفك لنصنع نسخة أوضح وأقوى.",
+        ctaStartNow: "Start Now",
+        ctaStartNowAr: "ابدأ الآن",
+        servicesEyebrow: "What I Offer",
+        servicesTitle1: "Services built for",
+        servicesTitle2: "impact.",
+        servicesSubtitleAr: "من فكرة إلى تصميم محترف.",
+        btnConsultation: "Free Consultation",
+        btnConsultationAr: "احجز استشارة مجانية",
+        aboutEyebrow: "About Me",
+        aboutTitle1: "Where design meets",
+        aboutTitle2: "medicine.",
+        aboutBadge: "Medical Content Specialist",
+        aboutLocation: "Cairo, Egypt",
+        skillsTitle: "Tools & Software",
+        aboutP1: "I'm Dr Abdurrahman M. Hafez, a Cairo-based medical content designer and editorial specialist with a deep focus on the medical and academic fields.",
+        aboutP2: "Well-designed medical content doesn't just look good — it helps students learn faster, doctors recall better, and institutions communicate with authority.",
+        tagMedicalContent: "Medical Content",
+        tagBookLayout: "Book Layout",
+        tagQuestionBanks: "Question Banks",
+        tagArabicType: "Arabic Typography",
+        experienceEyebrow: "Experience",
+        contactEyebrow: "Start a Conversation",
+        contactTitle1: "Let's make something",
+        contactTitle2: "worth reading.",
+        contactSubtitleAr: "لنصنع شيئاً يستحق القراءة.",
+        waLabel: "Fastest Response",
+        waTitle: "Chat on WhatsApp",
+        waSubtitleAr: "أرد في دقائق.",
+        emailLabel: "Email",
+        locationLabel: "Based in",
+        locationValue: "Cairo, Egypt · Remote Worldwide",
+        locationAr: "القاهرة، مصر · متاح للعمل عن بُعد",
+        linkBehance: "Behance",
+        linkLinkedIn: "LinkedIn",
+        linkInstagram: "Instagram",
+        formTitle: "Send a message",
+        formSubtitleAr: "أو راسلني مباشرة على واتساب لرد أسرع.",
+        labelName: "Name *",
+        labelEmail: "Email *",
+        labelService: "Service *",
+        labelMessage: "Message *",
+        optionSelect: "Select a service…",
+        optionBook: "Medical Book / Textbook",
+        optionPDF: "Books & PDF Typesetting",
+        optionPptx: "PowerPoint Presentation",
+        optionMindmap: "Mind Maps",
+        optionSummaries: "Summaries & Study Sheets",
+        optionQB: "Question Bank Writing",
+        optionOther: "Other",
+        btnSend: "Send Message",
+        orEmail: "Or email directly:",
+        backToTop: "Back to top ↑",
+        toastMsg: "✓ Message sent — I'll reply within 24 hours.",
+        pdfLoading: "Loading document…",
+        errName: "Please enter your name.",
+        errEmail: "Please enter a valid email.",
+        errService: "Please select a service.",
+        errMessage: "Please enter a message.",
+        skillNames: ['Illustrator', 'Canva', 'InDesign', 'PowerPoint / Keynote', 'AI Tools'],
+        skillWidths: [100, 100, 80, 90, 70],
+        timeline: [
+          ['Cairo University — Faculty of Medicine', 'Medical content designer — books, summaries, question banks, and presentations.', '2023 – 2025'],
+          ['King Saud University — Behavior Science', 'Full curriculum materials: explanations, question banks, and summaries.', '2024 – 2025'],
+          ['Masaar Platform', 'Content designer for medical & academic courses on the platform.', 'Current'],
+          ['Smart Vision Center', 'Full-service educational content design for courses and publications.', '2023 – 2024'],
+          ['Assiut University', 'Editorial designer for academic content and educational publishing.', '2022 – 2023'],
+          ['Freelance — Private Medical Courses', 'Books, presentations, mind maps & complete course content systems.', 'Current']
+        ],
+        services: [
+          ['Books & PDF', 'كتب وملفات PDF', 'Full layout, typesetting, medical textbooks & digital publications — print-ready.'],
+          ['Presentations', 'عروض تقديمية', 'Medical lectures, conferences & institutional slides that communicate with authority.'],
+          ['Mind Maps', 'خرائط ذهنية', 'Visual pathways & clinical diagrams that make complexity instantly clear.'],
+          ['Summaries & Q-Banks', 'ملخصات وبنوك أسئلة', 'MCQ banks, study cards & visual digests that compress complexity into clarity.']
+        ]
+      },
+      ar: {
+        brandName: "د. عبدالرحمن محمد حافظ",
+        brandTagline: "مصمم محتوى طبي وتحريري",
+        navWork: "الأعمال",
+        navBA: "قبل وبعد",
+        navServices: "الخدمات",
+        navAbout: "عنّي",
+        navContact: "تواصل",
+        whatsappLabel: "واتساب",
+        hireMe: "وظفني",
+        darkModeLabel: "الوضع المظلم",
+        menuTitle: "القائمة",
+        ctaStartProject: "ابدأ مشروعك",
+        ctaStartProjectAr: "ابدأ مشروعك",
+        badgeAvailable: "متاح للمشاريع",
+        badgeMedical: "أخصائي محتوى طبي",
+        heroTitle: 'د. عبدالرحمن<br/><em class="font-light not-italic text-forest dark:text-darkforest">محمد حافظ</em>',
+        heroRolePrefix: "تصميم طبي وتحريري",
+        heroDesc: 'تصميم محتوى طبي وأكاديمي وملفات PDF منظمة ومواد تعليمية للجامعات وكليات الطب والمؤسسات — مع تخصص عميق في <span class="text-medical dark:text-darkmedi font-medium">المجال الطبي</span>.',
+        heroDescAr: "تصميم محتوى طبي واحترافي يخدم الطلاب والأطباء والمؤسسات التعليمية.",
+        tagMedical: "#محتوى_طبي",
+        tagBook: "#تنسيق_كتب",
+        tagPDF: "#تصميم_PDF",
+        tagQB: "#بنوك_أسئلة",
+        tagSummaries: "#ملخصات",
+        btnViewWork: "شاهد أعمالي",
+        statBooks: "+ تنسيق كتب",
+        statPDFs: "+ ملفات PDF",
+        statInstitutions: "مؤسسات طبية",
+        statYears: "سنوات خبرة",
+        workEyebrow: "أعمال مختارة",
+        workTitle: "مجموعة 2022–2026",
+        workDesc1: "تشكيلة مختارة —",
+        workDesc2: "تريد المزيد؟",
+        workDesc3: "حمّل الملف الكامل أدناه.",
+        filterAll: "الكل",
+        filterPrint: "كتب و PDF",
+        filterPptx: "عروض تقديمية",
+        filterMindmap: "خرائط ذهنية",
+        filterAcademic: "ملخصات",
+        moreSamplesTitle: "تريد رؤية المزيد؟",
+        moreSamplesAr: "تواصل معي لتحميل الملف الكامل — كتب، ملخصات، عروض تقديمية، وأكثر.",
+        btnRequestPortfolio: "اطلب الملف الكامل",
+        btnRequestPortfolioAr: "اطلب الملف الكامل",
+        testimonialsEyebrow: "آراء العملاء",
+        testimonialsTitle1: "يثق به من يبحث عن",
+        testimonialsTitle2: "الوضوح.",
+        testimonialsDesc: "كلمات حقيقية من عملاء — ملفات أوضح، مراجعة أسرع، جاهزة للنشر.",
+        testimonial1Text: '"جربت أكثر من مصمم لملخصات الكلية، عبدالرحمن الوحيد اللي فهم المحتوى الطبي صح. الملفات طلعت واضحة ومتسلسلة، والطلاب بيرجعوا يقرأوا نفس الملف أكتر من مرة."',
+        testimonial1Name: "د. محمد العمر",
+        testimonial1Role: "طب الأسرة · مسار للتعليم الطبي",
+        testimonial2Text: '"We were reviewing a 280-page internal medicine textbook and the formatting was slowing down the whole editorial process. After the redesign, review time dropped noticeably — the visual hierarchy just made everything easier to navigate."',
+        testimonial2Name: "Sarah A.",
+        testimonial2Role: "Academic Review Lead · Medical Education",
+        baEyebrow: "قبل وبعد",
+        baTitle1: "حرّك الخط وشاهد",
+        baTitle2: "الفرق.",
+        baDesc: "عرض احترافي قبل/بعد يبقى متجاوبًا، سهل الاستخدام، وجاهز لملفاتك الحقيقية.",
+        baLabelAr: "قبل وبعد",
+        labelBefore: "قبل",
+        labelAfter: "بعد",
+        addBefore1: "أضف before-1.jpg",
+        addAfter1: "أضف after-1.jpg",
+        addBefore2: "أضف before-2.jpg",
+        addAfter2: "أضف after-2.jpg",
+        case1Title: "تنسيق علم السلوك",
+        case1Hint: "حرّك المؤشر يمينًا ويسارًا",
+        case2Title: "تحديث ملخص إكلينيكي",
+        case2Hint: "مناسب لعرض التحسين بصريًا",
+        ctaTransformationTitle: "جاهز لتحولك الخاص؟",
+        ctaTransformationAr: "حرّك السلايدر وشوف الفرق الحقيقي، ثم شارك ملفك لنصنع نسخة أوضح وأقوى.",
+        ctaStartNow: "ابدأ الآن",
+        ctaStartNowAr: "ابدأ الآن",
+        servicesEyebrow: "ما أقدمه",
+        servicesTitle1: "خدمات تُبنى لل",
+        servicesTitle2: "تأثير.",
+        servicesSubtitleAr: "من فكرة إلى تصميم محترف.",
+        btnConsultation: "استشارة مجانية",
+        btnConsultationAr: "احجز استشارة مجانية",
+        aboutEyebrow: "عنّي",
+        aboutTitle1: "حيث يلتقي التصميم",
+        aboutTitle2: "بالطب.",
+        aboutBadge: "أخصائي محتوى طبي",
+        aboutLocation: "القاهرة، مصر",
+        skillsTitle: "الأدوات والبرامج",
+        aboutP1: "أنا د. عبدالرحمن محمد حافظ، مصمم محتوى طبي وأخصائي تحرير مقيم في القاهرة، مع تركيز عميق على المجالات الطبية والأكاديمية.",
+        aboutP2: "المحتوى الطبي المصمم بعناية لا يبدو جيدًا فحسب — بل يساعد الطلاب على التعلم بشكل أسرع، والأطباء على الاستذكار بفعالية أكبر، والمؤسسات على التواصل بثقة.",
+        tagMedicalContent: "محتوى طبي",
+        tagBookLayout: "تنسيق كتب",
+        tagQuestionBanks: "بنوك أسئلة",
+        tagArabicType: "طباعة عربية",
+        experienceEyebrow: "الخبرة",
+        contactEyebrow: "ابدأ محادثة",
+        contactTitle1: "لنصنع شيئًا",
+        contactTitle2: "يستحق القراءة.",
+        contactSubtitleAr: "لنصنع شيئاً يستحق القراءة.",
+        waLabel: "أسرع رد",
+        waTitle: "دردش على واتساب",
+        waSubtitleAr: "أرد في دقائق.",
+        emailLabel: "البريد الإلكتروني",
+        locationLabel: "المقر",
+        locationValue: "القاهرة، مصر · متاح عن بُعد",
+        locationAr: "القاهرة، مصر · متاح للعمل عن بُعد",
+        linkBehance: "بيهانس",
+        linkLinkedIn: "لينكدإن",
+        linkInstagram: "إنستغرام",
+        formTitle: "أرسل رسالة",
+        formSubtitleAr: "أو راسلني مباشرة على واتساب لرد أسرع.",
+        labelName: "الاسم *",
+        labelEmail: "البريد الإلكتروني *",
+        labelService: "الخدمة *",
+        labelMessage: "الرسالة *",
+        optionSelect: "اختر خدمة…",
+        optionBook: "كتاب طبي / منهج دراسي",
+        optionPDF: "تنسيق كتب وملفات PDF",
+        optionPptx: "عروض تقديمية باوربوينت",
+        optionMindmap: "خرائط ذهنية",
+        optionSummaries: "ملخصات و أوراق مذاكرة",
+        optionQB: "كتابة بنوك أسئلة",
+        optionOther: "أخرى",
+        btnSend: "إرسال الرسالة",
+        orEmail: "أو راسلني مباشرة على:",
+        backToTop: "العودة للأعلى ↑",
+        toastMsg: "✓ تم إرسال الرسالة — سأرد خلال 24 ساعة.",
+        pdfLoading: "جاري تحميل المستند…",
+        errName: "الرجاء إدخال الاسم.",
+        errEmail: "الرجاء إدخال بريد إلكتروني صحيح.",
+        errService: "الرجاء اختيار خدمة.",
+        errMessage: "الرجاء إدخال رسالة.",
+        skillNames: ['Adobe Illustrator', 'كانفا', 'InDesign', 'باوربوينت / كينوت', 'أدوات الذكاء الاصطناعي'],
+        skillWidths: [100, 100, 80, 90, 70],
+        timeline: [
+          ['جامعة القاهرة — كلية الطب', 'تصميم محتوى طبي يشمل الكتب والملخصات وبنوك الأسئلة والعروض.', '2023 – 2025'],
+          ['جامعة الملك سعود — السلوكيات', 'إعداد مواد المنهج كاملة: شرح، أسئلة، وملخصات.', '2024 – 2025'],
+          ['منصة مسار', 'تصميم محتوى للدورات الطبية والأكاديمية على المنصة.', 'مستمر'],
+          ['Smart Vision Center', 'تصميم محتوى تعليمي كامل للدورات والمنشورات.', '2023 – 2024'],
+          ['جامعة أسيوط', 'تصميم وتحرير محتوى أكاديمي ومنشورات تعليمية.', '2022 – 2023'],
+          ['عمل حر — كورسات طبية خاصة', 'كتب وعروض وخرائط ذهنية وأنظمة محتوى كاملة للدورات.', 'مستمر']
+        ],
+        services: [
+          ['كتب و PDF', 'Books & PDF', 'تنسيق كامل، إعداد صفحات، كتب طبية ومنشورات رقمية جاهزة للطباعة.'],
+          ['عروض تقديمية', 'Presentations', 'محاضرات طبية وعروض مؤسسية تنقل الفكرة بثقة ووضوح.'],
+          ['خرائط ذهنية', 'Mind Maps', 'مسارات بصرية ورسوم إكلينيكية تجعل التعقيد أوضح وأسهل.'],
+          ['ملخصات وبنوك أسئلة', 'Summaries & Q-Banks', 'ملخصات، كروت مذاكرة، وبنوك أسئلة تختصر المعلومات بشكل منظم.']
+        ]
+      }
+    };
+
+    const projects = [
+      { cover: 'cover_1.png', embed: 'https://www.canva.com/design/DAHGDkD9NeU/IuzBwQq0ME_-E1G5ujGteg/view?embed', title: 'Behavior Science Exam night revision', category: 'print' },
+      { cover: 'cover_2.png', embed: 'https://www.canva.com/design/DAHAA3PUw74/QR9mWI0oy2QN_Y_q9k2o3g/view?embed', title: 'Text Bank', category: 'print' },
+      { cover: 'cover_3.png', embed: 'https://www.canva.com/design/DAGXfknPvnQ/w754Ldahtmh9AtgwLoLaIA/view?embed', title: 'Medical Lecture Deck', category: 'pptx' },
+      { cover: 'cover_4.png', embed: 'https://drive.google.com/file/d/1fP3iU91Fky-5lvDg4P0CwBPHz3kQvS1K/preview', title: 'Clinical Pathways Mind Map', category: 'mindmap' },
+      { cover: 'cover_5.png', embed: 'https://www.canva.com/design/DAHFJ86Wl_E/WSPq7q4DkAxsGMUjXL3pig/view?embed', title: 'Study Summary Sheets', category: 'academic' },
+      { cover: 'cover_6.png', embed: 'https://www.canva.com/design/DAHGyLoOyOk/M1-xhB1qQmTPAtPOZK85Dg/view?embed', title: 'Portfolio of Chapter 08', category: 'print' },
+      { cover: 'cover_7.png', embed: 'https://www.canva.com/design/DAHGDkD9NeU/IuzBwQq0ME_-E1G5ujGteg/view?embed', title: 'PU Sample', category: 'academic' },
+      { cover: 'cover_8.png', embed: 'https://www.canva.com/design/DAHFJ86Wl_E/WSPq7q4DkAxsGMUjXL3pig/view?embed', title: 'Immunity Sample', category: 'mindmap' },
+      { cover: 'cover_9.png', embed: 'https://www.canva.com/design/DAHGDkD9NeU/IuzBwQq0ME_-E1G5ujGteg/view?embed', title: 'Behavior Science Full', category: 'academic' }
+    ];
+
+    const feedbackSlides = [
+      { type: 'WhatsApp', bubbles: [{ text: 'الملف اتسلم وبدأنا المراجعة', cls: 'incoming' }, { text: 'Done — PDF ready for print.', cls: 'outgoing' }, { text: 'ممتاز، هنبعته للمطبعة بكره.', cls: 'incoming' }] },
+      { type: 'Review', bubbles: [{ text: 'The layout looks really clean now.', cls: 'incoming' }, { text: 'تسلم، شكرًا على ثقتك.', cls: 'outgoing' }, { text: 'Can we do the next chapter same style?', cls: 'incoming' }] },
+      { type: 'Feedback', bubbles: [{ text: 'الطلاب بيقولوا المذاكرة أسهل.', cls: 'incoming' }, { text: "That's the goal. 🎯", cls: 'outgoing' }, { text: 'جاهز للباتش الجاي متى ما حضر.', cls: 'incoming' }] },
+      { type: 'Delivery', bubbles: [{ text: 'Delivered before the deadline — impressive.', cls: 'incoming' }, { text: 'دايمًا في الميعاد.', cls: 'outgoing' }, { text: 'Will recommend you to the rest of the team.', cls: 'incoming' }] }
+    ];
+
+    // ==================== UTILS ====================
+    const $ = id => document.getElementById(id);
+    const html = document.documentElement;
+    const body = document.body;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Throttled cursor glow with requestAnimationFrame (Phase 2 #9)
+    const glow = $('cursor-glow');
+    if (glow && window.matchMedia('(hover: hover)').matches) {
+      let glowRaf;
+      document.addEventListener('mousemove', e => {
+        if (glowRaf) return;
+        glowRaf = requestAnimationFrame(() => {
+          glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+          glowRaf = null;
+        });
+      }, { passive: true });
+    }
+
+    // Dark mode
+    const applyDarkIcons = () => {
+      const dark = html.classList.contains('dark');
+      $('icon-moon').classList.toggle('hidden', dark);
+      $('icon-sun').classList.toggle('hidden', !dark);
+      $('theme-toggle').setAttribute('aria-checked', String(dark));
+      const themeMeta = document.querySelector('meta[name="theme-color"]');
+      if (themeMeta) themeMeta.setAttribute('content', dark ? '#0E0E0C' : '#F5F0E8');
+    };
+    applyDarkIcons();
+    $('theme-toggle').addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('color-theme', html.classList.contains('dark') ? 'dark' : 'light');
+      applyDarkIcons();
+    });
+
+    // Mobile menu with keyboard trap (Phase 5 #16)
+    const mobileMenu = $('mobile-menu');
+    const menuOpenBtn = $('menu-open');
+    const menuCloseBtn = $('menu-close');
+    let menuFocusables = [];
+    let lastFocusedElement = null;
+
+    const getFocusables = (parent) => parent.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+
+    const openMenu = () => {
+      lastFocusedElement = document.activeElement;
+      mobileMenu.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      menuOpenBtn.setAttribute('aria-expanded', 'true');
+      menuFocusables = Array.from(getFocusables(mobileMenu));
+      setTimeout(() => menuFocusables[0]?.focus(), 50);
+    };
+    const closeMenu = () => {
+      mobileMenu.classList.add('hidden');
+      document.body.style.overflow = '';
+      menuOpenBtn.setAttribute('aria-expanded', 'false');
+      if (lastFocusedElement) lastFocusedElement.focus();
+    };
+    menuOpenBtn.addEventListener('click', openMenu);
+    menuCloseBtn.addEventListener('click', closeMenu);
+    mobileMenu.querySelectorAll('.mobile-nav').forEach(a => a.addEventListener('click', closeMenu));
+
+    // Keyboard trap for mobile menu
+    mobileMenu.addEventListener('keydown', e => {
+      if (e.key !== 'Tab' || !menuFocusables.length) return;
+      const first = menuFocusables[0];
+      const last = menuFocusables[menuFocusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        if (!mobileMenu.classList.contains('hidden')) closeMenu();
+      }
+    });
+
+    // Scroll progress
+    const progressBar = $('progress-bar');
+    const toTopBtn = $('to-top');
+    const headerEl = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = max > 0 ? `${(window.scrollY / max) * 100}%` : '0%';
+      toTopBtn.classList.toggle('hidden', window.scrollY < 500);
+      if (headerEl) headerEl.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    toTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Reveal on scroll
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          entry.target.querySelectorAll('[class*="reveal-delay"]').forEach(el => el.classList.add('active'));
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Typed effect
+    const typedWordsEn = ['Designer', 'Typesetter', 'Educator', 'Specialist'];
+    const typedWordsAr = ['مصمم', 'محرر', 'معلم', 'أخصائي'];
+    let wIdx = 0, cIdx = 0, deleting = false, typeTimer;
+    const typedEl = $('typed-text');
+    function typeLoop() {
+      const lang = localStorage.getItem('portfolio-language') || 'en';
+      const words = lang === 'ar' ? typedWordsAr : typedWordsEn;
+      const word = words[wIdx] || '';
+      if (!deleting) {
+        typedEl.textContent = word.slice(0, ++cIdx);
+        if (cIdx === word.length) {
+          typeTimer = setTimeout(() => { deleting = true; typeLoop(); }, 1600);
+          return;
+        }
+      } else {
+        typedEl.textContent = word.slice(0, --cIdx);
+        if (cIdx === 0) {
+          deleting = false;
+          wIdx = (wIdx + 1) % words.length;
+        }
+      }
+      typeTimer = setTimeout(typeLoop, deleting ? 55 : 95);
+    }
+    function resetTyped() {
+      wIdx = 0; cIdx = 0; deleting = false;
+      clearTimeout(typeTimer);
+      typedEl.textContent = '';
+      typeTimer = setTimeout(typeLoop, 350);
+    }
+    resetTyped();
+
+    // Stat counters
+    const easeOutQuad = t => 1 - (1 - t) * (1 - t);
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const start = performance.now();
+      const dur = 1600;
+      (function tick(now) {
+        const p = Math.min((now - start) / dur, 1);
+        el.textContent = Math.floor(easeOutQuad(p) * target);
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target;
+      })(start);
+    }
+    const statsObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-number[data-target]').forEach(animateCounter);
+          statsObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('.stat-number[data-target]').forEach(el => statsObs.observe(el.closest('div') || el));
+
+    // Skill bars
+    let skillsAnimated = false;
+    const skillObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !skillsAnimated) {
+          skillsAnimated = true;
+          entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    // Project filter (Phase 1 #3 — uses opacity/pointer-events, not display:none)
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tab').forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        const filter = tab.dataset.filter;
+        document.querySelectorAll('.project-item').forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('hidden', !match);
+        });
+      });
+    });
+
+    // Contact form with real-time validation (Phase 7 #35)
+    function validateField(id, errId, testFn) {
+      const el = $(id);
+      const err = $(errId);
+      const valid = testFn(el.value);
+      err.classList.toggle('hidden', valid);
+      el.style.borderColor = valid ? '' : '#d97706';
+      return valid;
+    }
+    function validateForm() {
+      const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      let ok = true;
+      ok = validateField('f-name', 'err-name', v => v.trim().length > 0) && ok;
+      ok = validateField('f-email', 'err-email', v => emailRx.test(v.trim())) && ok;
+      ok = validateField('f-service', 'err-service', v => v.trim().length > 0) && ok;
+      ok = validateField('f-message', 'err-message', v => v.trim().length > 0) && ok;
+      return ok;
+    }
+    ['f-name', 'f-email', 'f-service', 'f-message'].forEach(id => {
+      $(id).addEventListener('input', () => {
+        const errMap = { 'f-name': 'err-name', 'f-email': 'err-email', 'f-service': 'err-service', 'f-message': 'err-message' };
+        const tests = {
+          'f-name': v => v.trim().length > 0,
+          'f-email': v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),
+          'f-service': v => v.trim().length > 0,
+          'f-message': v => v.trim().length > 0
+        };
+        if (tests[id]($(id).value)) {
+          $(errMap[id]).classList.add('hidden');
+          $(id).style.borderColor = '';
+        }
+      });
+    });
+    $('submit-btn').addEventListener('click', () => {
+      if (!validateForm()) return;
+      const name = $('f-name').value.trim();
+      const email = $('f-email').value.trim();
+      const service = $('f-service').value;
+      const message = $('f-message').value.trim();
+      const subject = encodeURIComponent(`[Portfolio] ${service} — ${name}`);
+      const body = encodeURIComponent(`Hi Dr Abdurrahman,\n\nName: ${name}\nEmail: ${email}\nService: ${service}\n\n${message}`);
+      window.location.href = `mailto:hello@hafez.design?subject=${subject}&body=${body}`;
+      const toast = $('toast');
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 4000);
+      ['f-name', 'f-email', 'f-service', 'f-message'].forEach(el => $(el).value = '');
+    });
+
+    // Visitor counter
+    const visitorCount = $('visitor-count');
+    if (visitorCount) {
+      const views = (parseInt(localStorage.getItem('portfolio-page-views') || '0', 10) || 0) + 1;
+      localStorage.setItem('portfolio-page-views', String(views));
+      visitorCount.textContent = views.toString().padStart(6, '0');
+    }
+
+    // Feedback carousel with swipe support (Phase 7 #34)
+    const feedbackCarousel = $('feedback-carousel');
+    const feedbackTrack = $('feedback-track');
+    const feedbackDotsContainer = $('feedback-dots');
+    if (feedbackCarousel && feedbackTrack && feedbackDotsContainer) {
+      let feedbackIndex = 0;
+      let feedbackTimer;
+      function renderFeedback() {
+        feedbackTrack.innerHTML = feedbackSlides.map((s, idx) => `
+          <figure class="feedback-shot" role="group" aria-roledescription="slide" aria-label="${s.type} ${idx + 1} of ${feedbackSlides.length}">
+            <div class="feedback-frame">
+              <div class="feedback-toolbar">
+                <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#25D366]"></span><span class="text-xs font-medium">${s.type}</span></div>
+                <span class="text-[10px] uppercase tracking-[0.22em] text-mist dark:text-darkmuted">${idx + 1}</span>
+              </div>
+              <div class="feedback-bubbles">${s.bubbles.map(b => `<div class="feedback-bubble ${b.cls}">${b.text}</div>`).join('')}</div>
+            </div>
+          </figure>
+        `).join('');
+        feedbackDotsContainer.innerHTML = feedbackSlides.map((_, i) => `<button type="button" class="feedback-dot ${i === 0 ? 'active' : ''}" aria-label="Go to slide ${i+1}" role="tab" aria-selected="${i === 0}" aria-controls="feedback-slide-${i}"></button>`).join('');
+        Array.from(feedbackDotsContainer.children).forEach((dot, i) => dot.addEventListener('click', () => { feedbackIndex = i; updateFeedback(); }));
+      }
+      function updateFeedback() {
+        feedbackTrack.style.transform = `translateX(-${feedbackIndex * 100}%)`;
+        Array.from(feedbackDotsContainer.children).forEach((dot, i) => {
+          dot.classList.toggle('active', i === feedbackIndex);
+          dot.setAttribute('aria-selected', String(i === feedbackIndex));
+        });
+      }
+      function stopFeedback() { clearInterval(feedbackTimer); }
+      function startFeedback() { if (!prefersReducedMotion) { stopFeedback(); feedbackTimer = setInterval(() => { feedbackIndex = (feedbackIndex + 1) % feedbackSlides.length; updateFeedback(); }, 3200); } }
+      // Swipe support
+      let touchStartX = 0;
+      feedbackCarousel.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+      feedbackCarousel.addEventListener('touchend', e => {
+        const diff = e.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(diff) > 40) {
+          if (diff < 0 && feedbackIndex < feedbackSlides.length - 1) { feedbackIndex++; }
+          else if (diff > 0 && feedbackIndex > 0) { feedbackIndex--; }
+          updateFeedback();
+        }
+      }, { passive: true });
+      feedbackCarousel.addEventListener('mouseenter', stopFeedback);
+      feedbackCarousel.addEventListener('mouseleave', startFeedback);
+      feedbackCarousel.addEventListener('focusin', stopFeedback);
+      feedbackCarousel.addEventListener('focusout', startFeedback);
+      renderFeedback(); startFeedback();
+    }
+
+    // Comparison sliders with ARIA (Phase 5 #18)
+    document.querySelectorAll('.comparison-card').forEach(card => {
+      const range = card.querySelector('.comparison-range');
+      const afterLayer = card.querySelector('.comparison-after');
+      const divider = card.querySelector('.comparison-divider');
+      if (!range || !afterLayer || !divider) return;
+      const updateComparison = value => {
+        afterLayer.style.width = `${value}%`;
+        divider.style.left = `${value}%`;
+        range.setAttribute('aria-valuenow', String(value));
+      };
+      updateComparison(range.value);
+      range.addEventListener('input', event => updateComparison(event.target.value));
+    });
+
+    // PDF Modal (Phase 1 #5 — clear iframe src immediately on close)
+    (function() {
+      const modal = $('pdf-modal');
+      const inner = $('pdf-modal-inner');
+      const frame = $('pdf-frame');
+      const loading = $('pdf-loading');
+      const closeBtn = $('pdf-modal-close');
+      const titleEl = $('pdf-modal-title');
+      let closeTransitionEnd;
+      function openModal(pdfSrc, title) {
+        frame.src = '';
+        titleEl.textContent = title || 'Document Preview';
+        loading.style.display = 'flex';
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => { frame.src = pdfSrc; });
+        closeBtn.focus();
+      }
+      function closeModal() {
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+        frame.src = ''; // immediate clear (Phase 1 #5)
+      }
+      frame.addEventListener('load', () => { loading.style.display = 'none'; });
+      document.addEventListener('click', e => {
+        const btn = e.target.closest('.open-pdf-btn');
+        if (btn) {
+          e.preventDefault();
+          openModal(btn.dataset.pdf, btn.dataset.title);
+        }
+      });
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+    })();
+
+    // ==================== RENDER FUNCTIONS ====================
+    function renderProjectCards() {
+      const grid = $('projects-grid');
+      if (!grid) return;
+      const lang = localStorage.getItem('portfolio-language') || 'en';
+      const isAr = lang === 'ar';
+      grid.innerHTML = projects.map((p, i) => `
+        <article class="project-item project-card group flex flex-col" data-category="${p.category}">
+          <div class="project-visual aspect-[3/4] rounded-2xl overflow-hidden relative bg-stone-100 dark:bg-white/5 shadow-page">
+            <img src="${p.cover}" alt="${p.title}" class="w-full h-full object-cover grayscale-[8%] group-hover:grayscale-0 transition-all duration-[800ms]" loading="lazy" decoding="async" />
+            <div class="project-overlay">
+              <div>
+                <small>${isAr ? 'ملف مميز' : 'Featured File'}</small>
+                <strong>${p.title}</strong>
+              </div>
+              <button class="project-pdf-btn open-pdf-btn" data-pdf="${p.embed}" data-title="${p.title}" aria-label="${isAr ? 'فتح ملف PDF' : 'Open PDF'}: ${p.title}">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 18h10M7 14h10M9 10h6M8 3h5l4 4v14a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg>
+                ${isAr ? 'فتح PDF' : 'Open PDF'}
+              </button>
+            </div>
+          </div>
+          <div class="mt-4 flex-1 flex flex-col">
+            <p class="text-[10px] uppercase tracking-[0.3em] text-mist dark:text-darkmuted mb-1.5">0${i+1} · ${p.title}</p>
+            <h3 class="font-display text-[1.2rem] font-semibold leading-snug group-hover:text-forest dark:group-hover:text-darkforest transition-colors">${p.title}</h3>
+            <p class="mt-2 text-sm leading-6 text-mist dark:text-darkmuted font-light">${isAr ? 'تصميم محتوى طبي احترافي.' : 'Professional medical content design.'}</p>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderSkills() {
+      const container = $('skills-bars');
+      const lang = localStorage.getItem('portfolio-language') || 'en';
+      const t = i18nStrings[lang];
+      container.innerHTML = t.skillNames.map((name, i) => `
+        <div>
+          <div class="flex justify-between text-xs font-medium mb-1.5"><span>${name}</span></div>
+          <div class="h-1.5 rounded-full bg-black/[0.06] dark:bg-white/[0.07] overflow-hidden">
+            <div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-forest to-darkforest dark:from-darkforest dark:to-[#6EC98A]" data-width="${t.skillWidths[i]}"></div>
+          </div>
+        </div>
+      `).join('');
+      const skillSectionEl = $('skills-section');
+      if (skillSectionEl) skillObs.observe(skillSectionEl);
+    }
+
+    function renderTimeline() {
+      const tl = $('timeline');
+      const lang = localStorage.getItem('portfolio-language') || 'en';
+      const items = i18nStrings[lang].timeline;
+      tl.innerHTML = items.map((item, i) => `
+        <div class="tl-item relative">
+          <div class="tl-dot ${i === 0 ? 'active-dot' : ''}"></div>
+          <div class="flex items-start justify-between gap-4 flex-wrap">
+            <div>
+              <h4 class="font-semibold text-sm leading-snug">${item[0]}</h4>
+              <p class="text-xs text-mist dark:text-darkmuted font-light mt-1 max-w-xs">${item[1]}</p>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-medical/10 text-medical dark:text-darkmedi text-[9px] font-medium flex-shrink-0">${item[2]}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderServices() {
+      const list = $('services-list');
+      const lang = localStorage.getItem('portfolio-language') || 'en';
+      const services = i18nStrings[lang].services;
+      list.innerHTML = services.map((s, i) => `
+        <div class="service-card group p-6 rounded-3xl border border-black/[0.06] dark:border-white/[0.04] bg-white/50 dark:bg-white/[0.02] hover:border-forest/30 dark:hover:border-darkforest/30 hover:bg-white/80 dark:hover:bg-white/[0.04] transition-all">
+          <p class="text-[8px] uppercase tracking-[0.3em] text-mist dark:text-darkmuted mb-1">0${i+1}</p>
+          <h3 class="font-display text-lg font-semibold">${s[0]}</h3>
+          <p class="text-[11px] text-forest dark:text-darkforest font-arabic mt-0.5 mb-2" dir="rtl">${s[1]}</p>
+          <p class="text-xs leading-6 text-mist dark:text-darkmuted font-light">${s[2]}</p>
+        </div>
+      `).join('');
+    }
+
+    // ==================== FULL I18N APPLY (Phase 1 #1) ====================
+    function applyLanguage(lang) {
+      localStorage.setItem('portfolio-language', lang);
+      const t = i18nStrings[lang];
+      const isArabic = lang === 'ar';
+      html.lang = lang;
+      html.dir = isArabic ? 'rtl' : 'ltr';
+      body.classList.toggle('lang-ar', isArabic);
+      $('lang-toggle-label').textContent = isArabic ? 'EN' : 'AR';
+
+      // Apply all data-i18n elements
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (t[key] !== undefined) {
+          if (el.hasAttribute('placeholder')) {
+            el.setAttribute('placeholder', t[key]);
+          } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            // skip inputs without placeholder
+          } else {
+            el.innerHTML = t[key];
+          }
+        }
+      });
+
+      // Apply select options
+      const serviceSelect = $('f-service');
+      if (serviceSelect && t.optionSelect) {
+        const opts = serviceSelect.querySelectorAll('option');
+        const keys = ['optionSelect', 'optionBook', 'optionPDF', 'optionPptx', 'optionMindmap', 'optionSummaries', 'optionQB', 'optionOther'];
+        opts.forEach((opt, i) => { if (keys[i] && t[keys[i]]) opt.textContent = t[keys[i]]; });
+      }
+
+      // Update typed text prefix
+      const prefixEl = $('hero-role-prefix');
+      if (prefixEl && t.heroRolePrefix) prefixEl.textContent = t.heroRolePrefix;
+
+      renderSkills();
+      renderTimeline();
+      renderServices();
+      renderProjectCards();
+      resetTyped();
+      skillsAnimated = false;
+      const skillSectionEl = $('skills-section');
+      if (skillSectionEl) skillObs.observe(skillSectionEl);
+    }
+
+    // Language toggle
+    const langToggle = $('lang-toggle');
+    langToggle.addEventListener('click', () => {
+      const next = (localStorage.getItem('portfolio-language') || 'en') === 'en' ? 'ar' : 'en';
+      applyLanguage(next);
+    });
+
+    // ==================== NAV INTERSECTION OBSERVER (Phase 7 #24) ====================
+    const sections = ['work', 'ba-work', 'services', 'about', 'contact'];
+    const navLinks = document.querySelectorAll('header nav a[href^="#"]');
+    const mobileNavLinks = document.querySelectorAll('#mobile-menu-nav a[href^="#"]');
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          [...navLinks, ...mobileNavLinks].forEach(link => {
+            const isMatch = link.getAttribute('href') === `#${id}`;
+            link.toggleAttribute('aria-current', isMatch ? 'page' : false);
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-80px 0px -40% 0px' });
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) sectionObserver.observe(el);
+    });
+
+    // ==================== INITIAL RENDER ====================
+    const savedLang = localStorage.getItem('portfolio-language') || 'en';
+    applyLanguage(savedLang);
+  </script>
+</body>
+</html>
